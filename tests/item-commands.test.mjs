@@ -139,3 +139,20 @@ test('地面已满时旧背包迁移明确失败且不标记完成',()=>{
   assert.equal(after.legacyImported,false);
  }finally{db.close();}
 });
+
+test('背包物品可以按数量销毁，不能销毁不存在的物品',()=>{
+ const {db,service,actorId,principal}=setup();
+ try{
+  const state=createDefaultItemState();
+  state.inventory.poop=3;
+  cmd(service,principal,'item.import',{actorId,state});
+  let result=cmd(service,principal,'item.destroy',{actorId,type:'poop',count:2});
+  assert.equal(result.removed,2);
+  assert.equal(service.readSnapshot('default').items.owners[actorId].inventory.poop,1);
+  result=cmd(service,principal,'item.destroy',{actorId,type:'poop'});
+  assert.equal(result.removed,1);
+  assert.equal(service.readSnapshot('default').items.owners[actorId].inventory.poop,0);
+  assert.throws(()=>cmd(service,principal,'item.destroy',{actorId,type:'poop',count:1}),/ITEM_NOT_IN_BAG/);
+  assert.throws(()=>cmd(service,principal,'item.destroy',{actorId,type:'unknown',count:1}),/INVALID_COMMAND|ITEM_NOT_FOUND/);
+ }finally{db.close();}
+});

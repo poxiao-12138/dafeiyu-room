@@ -176,6 +176,7 @@ export function buildLiving() {
     if (axis === 'x') hit.position.set(mid, h / 2, wallPos + 0.35);
     else { hit.rotation.y = Math.PI / 2; hit.position.set(wallPos + 0.35, h / 2, mid); }
     hit.userData.hotspot = opts.target;
+    hit.userData.walkPortal = opts.target;
     g.add(hit);
     // 门口暖光
     const dl = new THREE.PointLight(0xffb877, 2.6, 3.4, 2);

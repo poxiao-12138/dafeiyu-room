@@ -55,6 +55,7 @@ export const commandSchema=z.discriminatedUnion('kind',[
  cmd('item.moveSlot',obj({actorId:idSchema,from:z.number().int().nonnegative(),to:z.number().int().nonnegative()})),
  cmd('item.poop',obj({actorId:idSchema,sceneId:idSchema,position:vectorSchema})),
  cmd('item.pickup',obj({actorId:idSchema,itemId:idSchema})),
+ cmd('item.destroy',obj({actorId:idSchema,type:idSchema,count:z.number().int().positive().max(10_000).optional()})),
  cmd('item.drop',obj({actorId:idSchema,type:idSchema,sceneId:idSchema,position:vectorSchema})),
  cmd('item.compost',obj({actorId:idSchema})),
  cmd('item.collect',obj({actorId:idSchema})),

@@ -24,6 +24,9 @@ test('actor:control 授权的 MCP agent 可以摸/喂/捡屎/堆肥',async()=>{
  const agent={subjectId:'agent-grant',worldIds:['default'],scopes:['world:read','actor:control'],actorIds:[actorId],role:'agent'};
  const call=createToolCaller(service,{resolvePrincipal:async()=>agent});
  try{
+  const list=await call('pet_list',{});
+  assert.equal(list.pets[0].poopSpeed,'normal');
+  assert.equal(list.pets[0].poopIntervalMs,2*60*60*1000);
   assert.equal((await call('pet_pet',{requestId:'pet',petId:pet})).ok,true);
   assert.equal((await call('pet_feed',{requestId:'feed',petId:pet})).satiety,100);
   assert.equal((await call('yard_pickup_poop',{requestId:'pickup'})).ok,true);

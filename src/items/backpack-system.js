@@ -34,6 +34,7 @@ const STYLE = `
   font-variant-numeric:tabular-nums;background:#fffaf1d9;border-radius:7px;padding:0 3px;line-height:1.5}
 .bag-slot.empty{background:#faf3e8;border-style:dashed;cursor:default;opacity:.65}
 .bag-slot.empty:hover{background:#faf3e8;border-color:#e3d2bc;transform:none}
+.bag-destroy-hint{display:block;margin-top:6px;color:#a07860;font-size:11px}
 .bag-detail{margin-top:12px;padding:12px;border:1px solid #eadcc9;border-radius:13px;background:#fffaf1}
 .bag-detail-head{display:flex;align-items:center;gap:7px;margin-bottom:6px}
 .bag-detail-head .emoji{font-size:20px;display:grid;place-items:center}
@@ -521,7 +522,7 @@ export function mountBackpackSystem({
           if (!id) return `<button type="button" class="bag-slot empty" data-slot-index="${index}" role="listitem" aria-label="空格子"></button>`;
           const def = ITEMS[id];
           const owned = state.inventory[id] ?? 0;
-          return `<button type="button" class="bag-slot${id === selectedItemId ? ' selected' : ''}" data-slot-index="${index}" data-bag-item="${id}" role="listitem" aria-label="${def.name} ${owned} 个，拖出背包可丢弃">
+          return `<button type="button" class="bag-slot${id === selectedItemId ? ' selected' : ''}" data-slot-index="${index}" data-bag-item="${id}" role="listitem" aria-label="${def.name} ${owned} 个，拖出背包可丢弃，右键销毁">
             <span class="emoji">${itemIconHtml(def)}</span>
             <span class="count">×${owned}</span>
           </button>`;
@@ -529,7 +530,9 @@ export function mountBackpackSystem({
       </div>
       ${selected ? `<div class="bag-detail" title="${selected.description} 拖出背包可丢弃">
         <div class="bag-detail-head"><span class="emoji">${itemIconHtml(selected)}</span><b>${selected.name}</b><em>×${count}</em></div>
+        <span class="bag-destroy-hint">右键销毁 1 个 · Shift+右键销毁全部</span>
       </div>` : ''}
+      <p class="bag-foot">右键道具销毁 1 个；Shift+右键销毁整组。</p>
     `;
   }
 
@@ -735,6 +738,25 @@ export function mountBackpackSystem({
       y = surfaceAt(template, x, z)?.height ?? y;
     } catch { /* 保持玩家高度 */ }
     return [x, y, z];
+  }
+
+  async function destroyItem(id, all = false) {
+    const def = ITEMS[id];
+    if (!def) return false;
+    const owner = actorId();
+    if (!dispatchItems || !isConnected() || !owner) { onMessage('连接世界后才能销毁物品'); return false; }
+    const count = Math.min(effectiveItemState().inventory[id] ?? 0, all ? effectiveItemState().inventory[id] ?? 0 : 1);
+    if (count <= 0) { onMessage(`背包里没有${def.name}了`); return false; }
+    try {
+      const result = await dispatchItems('item.destroy', { actorId: owner, type: id, count });
+      const removed = result?.removed ?? count;
+      onMessage(`${def.name}已销毁 ×${removed}`);
+      localSound?.playAction?.('ui-confirm');
+      return true;
+    } catch (error) {
+      onMessage(error.message === 'ITEM_NOT_IN_BAG' ? `背包里没有${def.name}了` : '销毁失败，稍后再试');
+      return false;
+    }
   }
 
   async function dropItemToGround(id, clientX, clientY) {
@@ -1002,6 +1024,12 @@ export function mountBackpackSystem({
     selectedEmpty = false;
     selectedItemId = slot.dataset.bagItem;
     render();
+  });
+  body.addEventListener('contextmenu', event => {
+    const slot = event.target.closest('[data-slot-index]');
+    if (!slot?.dataset.bagItem) return;
+    event.preventDefault();
+    void destroyItem(slot.dataset.bagItem, event.shiftKey);
   });
   compostBody.addEventListener('click', event => {
     const action = event.target.closest('[data-bag-action]')?.dataset.bagAction;

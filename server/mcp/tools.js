@@ -10,6 +10,7 @@ import {nearestFree} from '../../shared/world/navigation.js';
 import {deriveStats} from '../../shared/creatures/stats.js';
 import {PET_SKILLS} from '../../shared/creatures/skills.js';
 import {getSpecies} from '../../shared/creatures/species.js';
+import {PET_POOP_SPEEDS,petPoopInterval} from '../../shared/creatures/poop.js';
 import {projectItems,compostPosition} from '../world/items.js';
 import {suggestLayout} from '../world/layout-suggestions.js';
 import {RULES,catalog,projectSnapshot} from './resources.js';
@@ -122,7 +123,7 @@ export function createToolCaller(service,{resolvePrincipal,extensions={},advance
  function petView(pet){
   const stats=deriveStats(pet.speciesId,pet.level,pet.bond,pet.evolved);
   const skills=(pet.skillLoadout??[]).map(skillId=>PET_SKILLS[skillId]).filter(Boolean).map(skill=>({id:skill.id,name:skill.name,kind:skill.kind,power:skill.power}));
-  const speed=pet.poopSpeed in PET_POOP_SPEEDS?pet.poopSpeed:'normal';
+  const speed=Object.hasOwn(PET_POOP_SPEEDS,pet.poopSpeed)?pet.poopSpeed:'normal';
   return {petId:pet.petId,name:pet.nickname,speciesId:pet.speciesId,level:pet.level,bond:pet.bond,satiety:pet.satiety??0,evolved:pet.evolved,sceneId:pet.lastSceneId||pet.homeSceneId,position:pet.lastPosition||pet.homePosition,poopSpeed:speed,poopIntervalMs:petPoopInterval(pet),stats,skills};
  }
  if(extensions[name])return extensions[name]({principal:p,worldId,args:a,service});

@@ -26,11 +26,12 @@ test('背包默认状态、增加与移除', () => {
   assert.equal(inventoryTotal(state), 0);
   assert.equal(addItem(state, 'poop', 3), 3);
   assert.equal(state.inventory.poop, 3);
-  assert.equal(addItem(state, 'poop', 1000), 96);
-  assert.equal(state.inventory.poop, 99);
+  assert.equal(addItem(state, 'poop', 1000), 1000);
+  assert.equal(addItem(state, 'poop', 99999), 8997);
+  assert.equal(state.inventory.poop, 10000);
   assert.equal(removeItem(state, 'poop', 4), 4);
-  assert.equal(state.inventory.poop, 95);
-  assert.equal(removeItem(state, 'poop', 999), 95);
+  assert.equal(state.inventory.poop, 9996);
+  assert.equal(removeItem(state, 'poop', 9999), 9996);
   assert.equal(state.inventory.poop, 0);
 });
 
@@ -98,7 +99,7 @@ test('离线/刷新时按时间戳恢复堆肥状态', () => {
 test('规范化会修复损坏/越界数据', () => {
   const state = normalizeItemState({
     version: 1,
-    inventory: { poop: -3, fertilizer: 9999, unknown: 4 },
+    inventory: { poop: -3, fertilizer: 10001, unknown: 4 },
     groundItems: [
       { id: 'a', type: 'poop', position: [1, 0, 2], sceneId: 'yard' },
       { id: 'b', type: 'poop', position: [1, 2] },
@@ -107,7 +108,7 @@ test('规范化会修复损坏/越界数据', () => {
     compost: { status: 'processing', startedAt: 1000, readyAt: 2000, notified: 1 },
   }, 3000);
   assert.equal(state.inventory.poop, 0);
-  assert.equal(state.inventory.fertilizer, 99);
+  assert.equal(state.inventory.fertilizer, 10000);
   assert.equal(state.inventory.unknown, undefined);
   assert.equal(state.groundItems.length, 1);
   assert.equal(state.compost.status, 'ready');

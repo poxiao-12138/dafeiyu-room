@@ -1,3 +1,4 @@
+import {ITEMS} from '../../shared/world/items.js';
 import {
   createDefaultItemState, normalizeItemState, addItem, removeItem, moveItemSlot,
   addGroundItem, removeGroundItem, getGroundItem, startCompost, collectCompost,
@@ -127,6 +128,18 @@ export const itemHandlers={
   removeGroundItem(bucket,itemId);
   emit('items.updated',{actorId,kind:'pickup',itemId});
   return {ok:true,itemId,...summary(bucket,snapshot)};
+ },
+
+ 'item.destroy':({snapshot,command,principal,now,emit})=>{
+  const {actorId,type}=command.payload;
+  const count=command.payload.count??1;
+  actorOf(snapshot,actorId);
+  const bucket=ownerBucket(snapshot,actorId,true);
+  if(!ITEMS[type])throw Error('ITEM_NOT_FOUND');
+  const removed=removeItem(bucket,type,count);
+  if(removed<=0)throw Error('ITEM_NOT_IN_BAG');
+  emit('items.updated',{actorId,kind:'destroy',type,count:removed});
+  return {ok:true,removed,...summary(bucket,snapshot)};
  },
 
  'item.drop':({snapshot,command,principal,now,emit})=>{

@@ -212,6 +212,7 @@ export function buildYard() {
   doorHit.position.set(wallX + 0.45, 1.2, (door.z0 + door.z1) / 2);
   doorHit.name = 'doorHit';
   doorHit.userData.hotspot = 'enter';
+  doorHit.userData.walkPortal = 'room';
   group.add(doorHit);
 
   // 门垫（回屋）

@@ -124,6 +124,7 @@ export function buildRoom() {
   roomDoorHit.position.set(-wallInner + 0.45, 1.15, (door.z0 + door.z1) / 2);
   roomDoorHit.name = 'roomDoorHit';
   roomDoorHit.userData.hotspot = 'exit';
+  roomDoorHit.userData.walkPortal = 'yard';
   group.add(roomDoorHit);
 
   const doormat = new THREE.Mesh(rbox(0.72, 0.03, 1.12, 0.012, 2),
@@ -162,6 +163,7 @@ export function buildRoom() {
   portalHit.rotation.x = -Math.PI / 2;
   portalHit.position.set(3.1, 0.4, pz);
   portalHit.userData.hotspot = 'living';
+  portalHit.userData.walkPortal = 'living';
   toLiving.add(portalHit);
   // 门垫上的暖光
   const portalLight = new THREE.PointLight(0xffb877, 1.6, 2.6, 2);

@@ -109,6 +109,16 @@ export class Interactions {
       this.pet(); return;
     }
 
+    // Door / doormat hotspots. The visible door plane is separate from the thin walk-in
+    // portal trigger, so clicking it should work even when the player stops just short.
+    const portalHits=this.ray.intersectObjects(this.hotspots,true);
+    if(portalHits.length){
+      let object=portalHits[0].object;
+      while(object&&!object.userData.walkPortal)object=object.parent;
+      const target=object?.userData.walkPortal;
+      if(target){this.onClickSound?.();this.onWalkPortal?.(target);return;}
+    }
+
     // Resolve the clicked mesh back to the exact editable furniture entity.
     if(this.worldAction&&this.getFurniture){
       const furnitureHits=this.ray.intersectObjects(this.getFurniture(),true);
