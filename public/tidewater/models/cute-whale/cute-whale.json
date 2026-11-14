@@ -1,0 +1,17 @@
+{
+  "count": 59940,
+  "position": {
+    "offset": 0,
+    "itemSize": 3
+  },
+  "normal": {
+    "offset": 179820,
+    "itemSize": 3
+  },
+  "color": {
+    "offset": 359640,
+    "itemSize": 3
+  },
+  "bytes": 539460,
+  "source": "Dafeiyu src/characters/whale.js"
+}

@@ -1,0 +1,1834 @@
+{
+  "format": 1,
+  "project": "Petalwake",
+  "source": "https://github.com/jjcm/petalwake/tree/25443cef0eba802052d9ef24c94ba3c4157b6f2e",
+  "provenance": [
+    {
+      "group": "src/, index.html, vendor/",
+      "channel": "Petalwake source / three.js",
+      "terms": "MIT; retain LICENSE and three.js notice"
+    },
+    {
+      "group": "assets/models/, assets/places/models/",
+      "channel": "Meshy image-to-3D",
+      "terms": "Meshy plan at generation time; paid = private ownership, free = CC BY 4.0 attribution; verify account record"
+    },
+    {
+      "group": "assets/textures/, assets/town/tex/",
+      "channel": "fal patina",
+      "terms": "fal does not warrant output ownership; each model terms apply; confirm before commercial redistribution"
+    },
+    {
+      "group": "assets/town/, assets/terrain/, assets/shore/",
+      "channel": "Petalwake bake/code",
+      "terms": "Petalwake MIT; generated material references may inherit the rows above"
+    },
+    {
+      "group": "assets/models/dafeiyu.glb",
+      "channel": "Hyper3D Rodin",
+      "terms": "Rodin output use not restricted, but no copyright/third-party-right warranty"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 82,
+      "sha256": "c9e7176becf7dc819cd4fbac0345a23a220e20d7bc8c23513b1e73df1505f520",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 334,
+      "sha256": "3817b7c0ec5fe55a6be4aa6b77ef4bc8e3c4b26900e64259c0c013073e203986",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/models/boulders_preview.png",
+      "bytes": 227016,
+      "sha256": "235e48afb6385a85093d1c134741f658e8ed1e8d6a42c500880a789b1b44bf4b",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/boulders.glb",
+      "bytes": 669820,
+      "sha256": "05123f357a9b8029fff53fe962c8304df64824d73053bf4de574b65cde41bd1a",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/boulders.json",
+      "bytes": 672,
+      "sha256": "6529e64faf6b0350e6ba7ce96e6a1aae8d85cf649df8cbe9c287018ef07e2f8e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/dafeiyu.glb",
+      "bytes": 25381944,
+      "sha256": "76b5a0ca81f803748e8f5420f7cc99a13bc93eea32883e6362ffcabfdf34ff33",
+      "license": "Dafeiyu.glb - Rodin/Hyper3D (authorized first-party model)"
+    },
+    {
+      "path": "assets/models/dafeiyu.json",
+      "bytes": 89,
+      "sha256": "a778ad9c8bf7bfab19ef1d8133e294a65e841e1d8d87dc9c06f338101433e8ea",
+      "license": "Dafeiyu.glb metadata - Rodin/Hyper3D"
+    },
+    {
+      "path": "assets/models/lighthouse_preview.png",
+      "bytes": 226874,
+      "sha256": "10b5db5753c700a7c4adf3c4b25f4b9bd6e0d72ed00d5b185f6747431cf58fee",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/lighthouse.glb",
+      "bytes": 4857788,
+      "sha256": "53f9ba81d89a1c4485590581a481679081eba129dd74047251b7d1e3a58d47fa",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/lighthouse.json",
+      "bytes": 664,
+      "sha256": "d96807fb22c2479e1aeec35d089d5939404edfbcf8cac647326b689b9085dbea",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/menhir_preview.png",
+      "bytes": 242725,
+      "sha256": "df66617bb956ccdb03182373a806edb08cbcdc37b7cb1dbdca22de973bcdda9c",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/menhir.glb",
+      "bytes": 620588,
+      "sha256": "82d68e3300134f1eb851707528d09cca01d6fb5db91e597b14de15b9e7bacb6c",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/menhir.json",
+      "bytes": 670,
+      "sha256": "a24314482960cf4c87310d7f77a14e79f1c9c83245ed1be7bf2b708795bf867f",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/rider_stand.glb",
+      "bytes": 7904644,
+      "sha256": "9160c73058698da275cf39bc693ebcf79f934e1af23e094f89001332e8bb4efd",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/rider_stand.json",
+      "bytes": 2283,
+      "sha256": "c907a9e8769871aaa977ecdeccba9d43f905fab4c128a397c91cc3924777045e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/rider.glb",
+      "bytes": 10905040,
+      "sha256": "4c2cb8c395bc14110380b80561690970cbfc6b16f6fde822b293c668e0860682",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/rider.json",
+      "bytes": 320,
+      "sha256": "ea0bd5896549f3bc4be08bc3a0a2e9e88f03e824ed524f83509ddc72f609a618",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/tree_preview.png",
+      "bytes": 129831,
+      "sha256": "ee9ca6f0f86c851e245a003db049112e75f4fa9748fadd9a93eda9333efad762",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/tree.glb",
+      "bytes": 2687820,
+      "sha256": "2030e3db94e8f0b7e57cb46e339a00b88ea4f1a3f3e8ebe03ea1eed5d81ef9d0",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/models/tree.json",
+      "bytes": 713,
+      "sha256": "14298475b117199c88965294a7ee2d6ffe4d79a03431fea5b12dd0ae5a49ac9e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/east.json",
+      "bytes": 45410,
+      "sha256": "77e3ee3d557529399241106ea98acaa066a6552c4ec7163e32b9517bc0496426",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/models/east_anemone.glb",
+      "bytes": 13484,
+      "sha256": "0b2a76b465cb36555cd11c887c1776c1d6b1c5a4105ea05631aa227abeff5f46",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_anemone.json",
+      "bytes": 154,
+      "sha256": "da79318f6ccb77d763ec64b71abae5beb2ebbe3a6581ef55f2c1308daf054714",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_bell.glb",
+      "bytes": 273956,
+      "sha256": "cfa31586ce35581f736b26bc1225b1f9b3b5b49ed5b6eb64c324b2d2dbdb95eb",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_bell.json",
+      "bytes": 250,
+      "sha256": "2c874c72614a48de7e6832d1694a28b58d467b78ff0c944d8885f78e3744fba9",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_bucket.glb",
+      "bytes": 24728,
+      "sha256": "186e290b2764dce666e1fb87f21f1809f05d53a6e98877943766126ed40bb5ec",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_bucket.json",
+      "bytes": 161,
+      "sha256": "dad617fa9e131d719abbab5294a5568fc4155902b0b25c7bb07ad5fba2a41a03",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cairn.glb",
+      "bytes": 409756,
+      "sha256": "cbd8a6baa22615958166ab86410a2a2cb5f9d9308db5c44a7804339eb4ae9711",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cairn.json",
+      "bytes": 725,
+      "sha256": "f968d38ceafb5ff3855ec8c16850227ec35dfda539da1287531bfb532c44fb65",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cairnlet.glb",
+      "bytes": 30128,
+      "sha256": "e08ecf566618ca79b7337914b057eb3fad3dbe2c92fa2aea468ae26392082a30",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cairnlet.json",
+      "bytes": 237,
+      "sha256": "5a92d345fb6a569cc7ec5930e6c784910b24ae82b6b4721820140766d3b73cb3",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_charms.glb",
+      "bytes": 80004,
+      "sha256": "29663a2a5c546c065b3525a0c46fca232e0702c61b9e1c2aba444c7c1e972fd8",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_charms.json",
+      "bytes": 500,
+      "sha256": "bcca745ded526a9c808b726b22db38f8da1161bb1c4207336eed83906746d579",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cinder.glb",
+      "bytes": 9464,
+      "sha256": "76500d4096eb29eb04d0982ec5a7c15e64f7faea92f746bb59145b88f15477f6",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cinder.json",
+      "bytes": 200,
+      "sha256": "39f4273eec7649b1fda54524aa28c453883d7df9e04b18577725652e72d12ba5",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_clam.glb",
+      "bytes": 542724,
+      "sha256": "3aef829153a265754856d60131502a019e9aded4700fd9f9d42f019738b6a306",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_clam.json",
+      "bytes": 767,
+      "sha256": "9e4de04a65fbe4952e1b329759b5026a8a2da32a033a547d726259ce09bb3e41",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_conch.glb",
+      "bytes": 594960,
+      "sha256": "6edb6f82ed55d3287f0461b18af9b84e39464b5123e730cc684050d5d9e9bbf3",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_conch.json",
+      "bytes": 771,
+      "sha256": "1e32f9c858d6f093314a945a69e350fe480103a8e0f10f87f16bd1db1dad41f7",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_coral.glb",
+      "bytes": 548940,
+      "sha256": "7eb4a516d949e63e094444c16505fe0a6493265dad853253e88f3445ca949e6c",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_coral.json",
+      "bytes": 724,
+      "sha256": "9dc6fe1b9e5182b176800bd3275d96c099ed486133bcfefb89c15e9dc7a1c316",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_coralbush.glb",
+      "bytes": 17888,
+      "sha256": "1fb9327d67551ad7de4a812b613759e76454a8edea1b0984a9d0bc7324344344",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_coralbush.json",
+      "bytes": 161,
+      "sha256": "c16d11e2e2215c1c11ba66869a83945cfa9f5e1726fdf2a69322311588e3f8e9",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cushion.glb",
+      "bytes": 9900,
+      "sha256": "46be451e0232c60666cb833063a6df33edb5e711d5082bb178ed5529d0728b59",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_cushion.json",
+      "bytes": 156,
+      "sha256": "274571a4ec8f0dadc7736dda666e1de85c0e39bcdd8b48a328ef55ed3584f4d8",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_driftwood.glb",
+      "bytes": 719980,
+      "sha256": "fd22ec6c84e1492481001ba33b8debfd59b466e9a9719d4056abd40ab4070a3e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_driftwood.json",
+      "bytes": 769,
+      "sha256": "dea942a9c55669f75d1f0b936035e44dcefa215730743cb6553671eedf87fc92",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_emberleaf.glb",
+      "bytes": 1357000,
+      "sha256": "4b1517a00421fbf2fb3bfbbd4ba7f2584d5ea6af7ead564a82a8acbfd5e05d9d",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_emberleaf.json",
+      "bytes": 3652,
+      "sha256": "3d87804c21e2698014234abf4f0c918b90e12c1c4bae4a78e403b482428fe0eb",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_embermoss.glb",
+      "bytes": 15324,
+      "sha256": "0c575aadf7d3dff4f06bf7b5d8268cd47c1f3e12e985067ba32786cf992c6364",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_embermoss.json",
+      "bytes": 141,
+      "sha256": "86beb7610b01eafa2528a4955eca5b85c625c561ec368ae5a5c42aa1d7484285",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_emberstone.glb",
+      "bytes": 195668,
+      "sha256": "2a0e83b70c12071bef65e2e0376a8d3a07355a2bc5b237709af1456225cb9d3a",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_emberstone.json",
+      "bytes": 250,
+      "sha256": "214ddc4dbc320dd856049fb6842783eec7e15841e3df02cf6a512ebe05fb59ec",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_ferrylight.glb",
+      "bytes": 263124,
+      "sha256": "cdfc834aaa28bf96ed5ca29205cce769d2aebe078c79f369b9129c6a06a9fde6",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_ferrylight.json",
+      "bytes": 252,
+      "sha256": "7e10b05bdea87f247e58cc44bcf2adbe01447dbe609b837cbfa1f6f1cbe83e71",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_glasslily.glb",
+      "bytes": 15256,
+      "sha256": "482f333b6d0d972b97175ef22a913d3e739371d65a39cb60b27368176b703887",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_glasslily.json",
+      "bytes": 200,
+      "sha256": "2637222722e9ae42c8528a3d80369366400d9f76f57c856fae0ca17f59347f20",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_jetty.glb",
+      "bytes": 94512,
+      "sha256": "7f0aff42a9782c31d6a3ede2cd14d53570a75248b3be682d007ec4e0dcb78bcd",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_jetty.json",
+      "bytes": 2775,
+      "sha256": "2bd85ef8713d4eed816bcf68f951fcc40a937c3eda412ac626e414ae132a28d5",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_lanternberry.glb",
+      "bytes": 31932,
+      "sha256": "97f6c0549f3e7de4ececa1163a54466104bf9c043a3ca52ebddc39791e07bee2",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_lanternberry.json",
+      "bytes": 203,
+      "sha256": "a351673b81e6e8060bcb06a462aa480d892eb1eeac296e995dfd99237890b9f2",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_lotus.glb",
+      "bytes": 9628,
+      "sha256": "9112f31ef44afe451660f8ddea14460a58d2f335504876b150d06a40d02ab817",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_lotus.json",
+      "bytes": 154,
+      "sha256": "5ae1a3b89cba660f08ef8b1d52364072a9c38b06c4ea6ddf552fff2f81d4bbf9",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_mangrove.glb",
+      "bytes": 1713328,
+      "sha256": "4d74a73d9ee0bec42aeb4a2377ae4bd079902f67ce2183a1292fed7dba5c9a1f",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_mangrove.json",
+      "bytes": 8371,
+      "sha256": "48d74811b3b74be1541a487219871f420eda9ee0ae2687ce469c8317ec1307fb",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_meteor.glb",
+      "bytes": 711652,
+      "sha256": "82d49d16373387049a8296c7c8746c0a9783121fad8aac30893bfe9f32c51c21",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_meteor.json",
+      "bytes": 1404,
+      "sha256": "14e0736c88dd4b747fbf22a7ce8115a92d0a3279a88cf7029ba000956b8efcf6",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_moorpost.glb",
+      "bytes": 12392,
+      "sha256": "17135d5f1cab006b127d72e26b28ed487b178a720d4ca8f0acbb00d85d800dfe",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_moorpost.json",
+      "bytes": 287,
+      "sha256": "1de0f028e49ef67ac48be238a94c370d03763a01bc7c6fd7e80f414e241946bf",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_pearl.glb",
+      "bytes": 8112,
+      "sha256": "bcb8adfcb89c282053866540aa93e290212c09a1b43e93b0b14e72b4a02a8e07",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_pearl.json",
+      "bytes": 203,
+      "sha256": "0ec99e18a877bbed460ad5d022d8a9d1f09b3503eb2d0246cf370030090420b7",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_pine.glb",
+      "bytes": 1467092,
+      "sha256": "7d03e54249637f2a1c799d3ff81d5825bb568b4f0089b0f37a8a01da43f5650d",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_pine.json",
+      "bytes": 5627,
+      "sha256": "b3e051e0a1b615101ca53edd6638d0d0fb5fbd254ebfab5043d2b244f335dc4e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_plume.glb",
+      "bytes": 18704,
+      "sha256": "9bcb0e5234fceb610eafc1c7fe7bca9636d4e97f182b942eb1d3d1027550b73a",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_plume.json",
+      "bytes": 154,
+      "sha256": "c61cf0dd93e4d1c810c6dc3f61d7c317a25f72abf6bbc48b155a12d7ac6f4995",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_pools.glb",
+      "bytes": 659976,
+      "sha256": "259fde7d80b76f10ad835e6d83cece178d8c7b6da7669283a52d5dbaaf3b3f3d",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_pools.json",
+      "bytes": 764,
+      "sha256": "9840142258b563be2dffa7c8e1e3d8f7cbe783ac729814bfefc742558fad9744",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_ribarch.glb",
+      "bytes": 11936,
+      "sha256": "57962c9fe0f1862b962248450cfa73786fe7fc535359bdf7eb88217533b7c73f",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_ribarch.json",
+      "bytes": 487,
+      "sha256": "6434a96397aedf5c174859e4bd3ea33a30f15050a93337e0bce443f3caee797f",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_scallop.glb",
+      "bytes": 4244,
+      "sha256": "b672621e92392dd2857b2b2d115233cf9adc7a1b4d05670e2d4a6aecb3bbf44e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_scallop.json",
+      "bytes": 171,
+      "sha256": "21df83c9c0bc18762cf5199289981c788e5faed64e7c56699a8e3b74f54b886d",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_scorchgrass.glb",
+      "bytes": 7468,
+      "sha256": "e9b6e27eccbdeea31701d0f08cfb3e60d17999c176f90a506e5d6e765a047474",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_scorchgrass.json",
+      "bytes": 159,
+      "sha256": "b3335d6ee7fd39aa4c1683394214b9a3b67080c25210954168cbd17ddad8a635",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_seafan.glb",
+      "bytes": 15400,
+      "sha256": "f5b05f2982af90cde8ac3c1c6d10bdacdb8433ecb03b854da55f951cbfd27952",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_seafan.json",
+      "bytes": 172,
+      "sha256": "af781724d24a81d65191ef574033563999dbdc44ad7d408865530ddec0f08d38",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_seaholly.glb",
+      "bytes": 31688,
+      "sha256": "38479a4faeae369c62e22418375ee5e2228d04d54c802c9028086c1d22f45935",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_seaholly.json",
+      "bytes": 158,
+      "sha256": "2a9836c073846b18cd850dc1fefdea285979a9febcbab2c2fa8e07ade02d48e3",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_shard.glb",
+      "bytes": 12292,
+      "sha256": "7147f6d42018022b19e16689c39622367e9593c252856e700e2dbb519f044d1f",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_shard.json",
+      "bytes": 198,
+      "sha256": "b5110a0b06378a735cce7015034c98863aa26d1eaf36457594c748e8c0f613ad",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_skiff.glb",
+      "bytes": 616744,
+      "sha256": "9ce041203758cc597436d5d8bc64be55f4de1877dc83173647fa58824bdd0ff7",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_skiff.json",
+      "bytes": 809,
+      "sha256": "5358d888291f22aa9f98d262b7b97812cb0d036e791a0256738997a497eb9ca9",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_skybell.glb",
+      "bytes": 12408,
+      "sha256": "b32822509aa65fd309c1b96578ab0465c51f38b46484cce9c9c80978c2e97392",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_skybell.json",
+      "bytes": 154,
+      "sha256": "a558a132964db4425f44d09708392aa40b2495dd683f339d60f5e5ffa871bbf3",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_songbone.glb",
+      "bytes": 263908,
+      "sha256": "92d79a2eab4f01c590ed6ed969243cf93df34e6db562a052e4a6c35a4b12deb0",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_songbone.json",
+      "bytes": 186,
+      "sha256": "1add6dd4f2a255156a85b4e23d61f73dca1cf2a5d9715b8a22b6092de830a121",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_splinter.glb",
+      "bytes": 303136,
+      "sha256": "fe8d38ce8449ad467e870789cf1e27d29f33b03023044f29919b096fe34898ae",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_splinter.json",
+      "bytes": 264,
+      "sha256": "5f6441acd30e2048e8c3005374441c172eeecd2c03700d285f25205891f85461",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_starfish.glb",
+      "bytes": 2448,
+      "sha256": "92578187e0f8a2adc9ba9114cc1fed8bf9af1ae7c707a8bc55b2e6a0589f9189",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_starfish.json",
+      "bytes": 170,
+      "sha256": "190dafd80912199497158c393c65ad3b440138a3715704b3df09bc778868f6b1",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_starglass.glb",
+      "bytes": 14420,
+      "sha256": "ed21a0a339b48054b8d63b9bf7d95d9a7739651c8eed24b957e6e8f8b9c89b7a",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_starglass.json",
+      "bytes": 328,
+      "sha256": "84a90508234d41da2040264ef04576c8cf2119e9c245037c616a08726a868460",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_stepstone.glb",
+      "bytes": 5780,
+      "sha256": "ebf6e8ca66c134c17eae4eec08feac1a5cc1a01bcb15dedd6ee35c35268e7073",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_stepstone.json",
+      "bytes": 163,
+      "sha256": "001379c955757436ce954dff3155dbf91dd1badc860cccb590bea30af0fb0e07",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_thrift.glb",
+      "bytes": 14584,
+      "sha256": "81a13435e25948b04e5b05fba0c2e80f0862c4d354f5b683b82e396f6abdb605",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_thrift.json",
+      "bytes": 153,
+      "sha256": "1c9e765fcfb2a2c42530f3f24defb58b2f286b4014e542a903275b7567a00c7e",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_whale.glb",
+      "bytes": 1337204,
+      "sha256": "8d4b1cc36061e2bf57ffb6136431d2712b179021b04fec9e825ebab71062f321",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/models/east_whale.json",
+      "bytes": 30773,
+      "sha256": "04ac0cf195a4a01986f0bb800d155c70dad6f647aeb3e6f73724d5f1fce8c4f0",
+      "license": "Meshy-generated Petalwake asset; verify account plan terms"
+    },
+    {
+      "path": "assets/places/west/anchor.glb",
+      "bytes": 359000,
+      "sha256": "866fd2cf0977d51da77fb36b359c3a912bb91c09e672a61a039561ceb7fd160b",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/anchor.json",
+      "bytes": 710,
+      "sha256": "834ba913b38dc41a9bda7b1f652f928910dceecf6bd14ceb431724cd1825a77a",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/blossom_tree.glb",
+      "bytes": 1145896,
+      "sha256": "b2354aef7be298db514d5eef4d2b6cc1d2261c35f338b37c1c242b4b452a4d9d",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/blossom_tree.json",
+      "bytes": 806,
+      "sha256": "9aaecaa88352b7a6d9b801b6f389f57f2f7072d1d42c2c4eff0531a2120c440c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/bunting.glb",
+      "bytes": 13300,
+      "sha256": "ab3b4d47e3c78452bb283e083e4bdb852356d303ecb3cf15d079a5c9fc9c9d15",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/bunting.json",
+      "bytes": 200,
+      "sha256": "4956d90387a3ec4e43b031616160f21314ded5a1626d90f86343420cf7ee20f8",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/cottongrass.glb",
+      "bytes": 8596,
+      "sha256": "849005919ab2f5a1b7e467b4e5ce5fafda543e322c39b785bc1012956bb1eb3e",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/cottongrass.json",
+      "bytes": 154,
+      "sha256": "6a9c838b03fb4e61b4ed1b41c1c6122b66ef96ad51d9f55b723eb077363487d8",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/dandelion_bloom.glb",
+      "bytes": 30184,
+      "sha256": "b76cb1b25d7b3786441847dc6e410ead9491770f45876c6981c40235bec8d907",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/dandelion_bloom.json",
+      "bytes": 176,
+      "sha256": "be01d4b45ad67231622c17efb2864be0720ed22f57ec418cdc2d6029d59f6910",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/dandelion_clock.glb",
+      "bytes": 56236,
+      "sha256": "46942cbc5959c3a75fb929efdfdfa685872bba6fe1acd0457262c3d6ebff0269",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/dandelion_clock.json",
+      "bytes": 176,
+      "sha256": "e499f5ba125ae6992d4fb60f871bd68078a3ff00ce5ad116b4ff568879309844",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/dandelion_half.glb",
+      "bytes": 36640,
+      "sha256": "1cc446d4b5336850649d3936d50bf68bfe29cf7773307c2abf696fd5b82da77c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/dandelion_half.json",
+      "bytes": 174,
+      "sha256": "f29bebd7c038747d355239b227a752104ec7ee21dc5cba5a30690dcc5a6142ad",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/driftwood.glb",
+      "bytes": 6852,
+      "sha256": "4af594aeffbf78415c8381bec7b8ba66d1922f3a9fb57b74b0db4e6c830e51ff",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/driftwood.json",
+      "bytes": 203,
+      "sha256": "7eca0d9b380dbbe6c4c62ffb9f55c80dc7d3b57015ee8fbe22f9d2d17148dea7",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/fern.glb",
+      "bytes": 39320,
+      "sha256": "da42e0d03dfaf98d591af4765097024ae70e750d5cec0b2bd407147019a8b075",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/fern.json",
+      "bytes": 152,
+      "sha256": "f6633ce51459326b7ed737319db88261ac7d53a2839036cf55e2d6bd00d4c3fa",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/flagiris.glb",
+      "bytes": 10556,
+      "sha256": "0b83c01dae6f20286d0b9558a8f2f89d42e4dc46dbc04d3195bd20ec888fe4d1",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/flagiris.json",
+      "bytes": 151,
+      "sha256": "fb33bd65cdc595b914f43d531d750146390e973dba5fa2f210f3642e4d6eda88",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/flower_boat.glb",
+      "bytes": 1102588,
+      "sha256": "5652859cd64d73173cd8542a2e79347e27f43097a8b306bb7d81a6d34151a499",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/flower_boat.json",
+      "bytes": 4118,
+      "sha256": "726a0f695d731b7cc183abf65f0d400f462480b7057500c638dc191995b706ad",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/gentian.glb",
+      "bytes": 10840,
+      "sha256": "77394769e27e86a2f1679d12de25ceb09b09249878871cf43e69cb4f06cf6e0c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/gentian.json",
+      "bytes": 149,
+      "sha256": "9a8fbadbb7817b192e50b0c667e6ed294e89f11f6f1a65d11b1c5746c6b2c917",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/glass_floats.glb",
+      "bytes": 322132,
+      "sha256": "ce382e646b369a195c8d02eb2bcd9747143049e35a285b7cfd41343e90ef5e8e",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/glass_floats.json",
+      "bytes": 821,
+      "sha256": "fe11472a456e484edb8d03de074a268a233fc9a90a62bf262f757f4d75de985d",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/groyne_post.glb",
+      "bytes": 6532,
+      "sha256": "980308ae9b7d48888bc4485e619e07e2f837f2953ff0f3660de06463d87b91c1",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/groyne_post.json",
+      "bytes": 187,
+      "sha256": "4547e569e15bfde63629f2b6521b5bbdefb8d40cda9dde653fb7bd4fdfa42b74",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/heather.glb",
+      "bytes": 9264,
+      "sha256": "a38a98d30fa56532ccc28f14e9d107a70b0f6804c305607835b9a7b8f59946a6",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/heather.json",
+      "bytes": 150,
+      "sha256": "734e6b9cabbc878607ed9290a05e8c39dc61d1facae4745820832936fedb4325",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/hourglass.glb",
+      "bytes": 266632,
+      "sha256": "042aeb77bc24cf8bd6c61a26676b012898e612daddc1b4810f5758c007e70bb6",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/hourglass.json",
+      "bytes": 738,
+      "sha256": "00d0ca224a718d1b75ab273c182abb0f8b09bf27a32b3a8ac413d81528953c14",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/marigold.glb",
+      "bytes": 10928,
+      "sha256": "a0d7f6596b188a8275712d1a4c51af919fa31bb648c73103d3ca50bb9bbf1410",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/marigold.json",
+      "bytes": 151,
+      "sha256": "86d424558b5e047d44c52ac918cc1c35dbadade6645030ff22c9a02048d22890",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/marram.glb",
+      "bytes": 10792,
+      "sha256": "61b45eaf93439812da9b6ed99d3421ffddf86ddb9723eb67ac8805eb146c0058",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/marram.json",
+      "bytes": 149,
+      "sha256": "b3df0754e976cc731cf0bc90a09ce717fe3cef2e30a3781d594f5857368212c3",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/moss.glb",
+      "bytes": 4556,
+      "sha256": "64855d0f44dbbfc8202be597e758d6d7f0d3699af76cd0ba6b82d9caf2cbbea1",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/moss.json",
+      "bytes": 145,
+      "sha256": "72415a515fdf5f57ca5c39ceae8ae02a70bba507cc98812271168646bc1865a0",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/oar_flag.glb",
+      "bytes": 6336,
+      "sha256": "12ee2a9381d0fb844a28df30d553ffa62c3f682c8c1105a2ad62f38202796dea",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/oar_flag.json",
+      "bytes": 252,
+      "sha256": "c9e32cec49b38772c5d0b530485b2792bcfa8404f928f8415fe859a440e94601",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/pennant_gold.glb",
+      "bytes": 12040,
+      "sha256": "d17ea093c97fbb3b3cd12fa8c59ef8fe062009a8dd88c6d0327f823eb765a71d",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/pennant_gold.json",
+      "bytes": 290,
+      "sha256": "e9277f943463908d40d79f1b3d1e8836e9bb81b26f56733c477c846a814b8a37",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/pennant_red.glb",
+      "bytes": 12036,
+      "sha256": "14dbc1851ad966bdc5afd8cc61eeb222316fc67cf5f5e4e740e61e2c0fdb3892",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/pennant_red.json",
+      "bytes": 289,
+      "sha256": "684fba4d5fabbe478f151457bb8636916fd48de5405ef5ce2b3305872213ae36",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/pennant_white.glb",
+      "bytes": 12044,
+      "sha256": "a40e91bd3fd33cb0f1ee6520353d2217e7b6114238da939bc47de50e35de6a35",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/pennant_white.json",
+      "bytes": 291,
+      "sha256": "49fdf472ac579c6e9358314bf1ca5bb79dd8f5318ca161ee556331e1917372e3",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/petalfall.glb",
+      "bytes": 3144,
+      "sha256": "43afe6c932a5c58fb265713f88df1a6806888c320632c5d1648038aa8e0a02f5",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/petalfall.json",
+      "bytes": 151,
+      "sha256": "7e8b18a7cb67bc079ee1ea1a6dfa3dcdb74363bb4b677627181321b9fad22419",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/rimlily.glb",
+      "bytes": 15664,
+      "sha256": "b656b761277814ed6fc5294539f33117310130cf3b89e51ac141d54b97111faf",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/rimlily.json",
+      "bytes": 188,
+      "sha256": "fb6e2130d943e9b52c43975c0355479b1ab604814f4b8b68dd0b0e396b34d866",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/seapoppy.glb",
+      "bytes": 10604,
+      "sha256": "822738b5d2c5527d4bf3b6f9163be6941f85679e6e665c98f672faa44ac71bdf",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/seapoppy.json",
+      "bytes": 150,
+      "sha256": "3551be245abe39236ced104ab5401633b16aff6837b85e7bf91f396a99093b6e",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/ship_mast.glb",
+      "bytes": 1051640,
+      "sha256": "7abde59a1ff39349fdd4d9db867abe79fdb6f262d452d6d167a41bae64116146",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/ship_mast.json",
+      "bytes": 726,
+      "sha256": "6d52ab6dbd08b359872fe6b3b7183cfe0e5596f11cd6f2c75501f33a7af6c714",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/spiderlily.glb",
+      "bytes": 13348,
+      "sha256": "779d467f7006566f5ac4591aa98df6dc60a9d7e44b88c6a3736c3e5ff4cd494c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/spiderlily.json",
+      "bytes": 152,
+      "sha256": "eec82f23166c6b007d7990dc082036cc66ea068beca8b31b5ce633bb77e7adb7",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/stone_hand.glb",
+      "bytes": 922024,
+      "sha256": "38815e87425a82f80b463ba105466845c871d577e42ee4615d38f7225df1380a",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/stone_hand.json",
+      "bytes": 7725,
+      "sha256": "ec4182dbcb5175a2f8f7350c92199a09fa1e402070db8f22221209baae73e8f7",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/stone_lamp.glb",
+      "bytes": 231128,
+      "sha256": "c823ce182e645e83af4826987c8aad5214b0d3bf95b925bcab201aaff2b11d05",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/stone_lamp.json",
+      "bytes": 793,
+      "sha256": "8d97be387d78a94fbda40ec61f78913c76740541aba8b6103f8232369f4f3843",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/storm_marble.glb",
+      "bytes": 262304,
+      "sha256": "b4c49ea8672af8888ac46c061f6e746940ab28269869c70e11a841d3d4e98574",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/storm_marble.json",
+      "bytes": 731,
+      "sha256": "a6c3bdcec5cf22ee32fda9a31b9a6d0aba7fc6dd11f53b79d94bb5d1a3840ab5",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/sundial.glb",
+      "bytes": 502160,
+      "sha256": "44bf95f3c9f171a390065d9c611e0ba4eac31186bce5769b216db9586ff70ff7",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/sundial.json",
+      "bytes": 746,
+      "sha256": "f818d983928c08134e591667d48eb8182e4f5e1925b3ea98727c7f32271a7a28",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/teacup.glb",
+      "bytes": 177748,
+      "sha256": "120d20b2b31ddde7ea57e60967f78a41ab83a06a97e2dc77c40ea1f151bee102",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/teacup.json",
+      "bytes": 735,
+      "sha256": "ca61e3e498dda9475201b3f14bc10fd923f1e2bc3a405cf11c2f56e59adcfc42",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/thimble.glb",
+      "bytes": 279624,
+      "sha256": "e4f2db67b29bc4b4c6de6fcef377e692ffc76335f1e5495388aaf6783dfd990b",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/thimble.json",
+      "bytes": 745,
+      "sha256": "44567f93b8d6f994a2097013c89991b1a6f7cb401e05522a3ab0ab8867ab9845",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/tide_knot.glb",
+      "bytes": 361148,
+      "sha256": "73095364b08138c009a423b614367bceeeba8b4d8c247adad27acf50f59c4332",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/tide_knot.json",
+      "bytes": 746,
+      "sha256": "87814422dd39e2b023a79058bcc19c9b2b938b1601deef15c3d379748398e047",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/whistle.glb",
+      "bytes": 278176,
+      "sha256": "f64f94b75ce70091f4c62fd23a49d99bb536c72198ebcb9d5ab71cfe3efec340",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/whistle.json",
+      "bytes": 721,
+      "sha256": "c42e5908a7f9932cc3d4741d9ffded1c4a58b29c501eb4733d1f797ce45d6f63",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/wisteria_bridge.glb",
+      "bytes": 1511192,
+      "sha256": "55547ae07d081c7145751580ebb24daefc4fe470725da8b52e1b6c845f46e8dd",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/wisteria_bridge.json",
+      "bytes": 15780,
+      "sha256": "d2715bc5ad5f351e3f72ea56b15670d130d4f2b665b8d6b68a9ac1852a17c894",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/wisteria_fall.glb",
+      "bytes": 3156,
+      "sha256": "44f36fa8df9fc7823c44cc8893b6e650ba0fcaafef589e25a01e47d6a080cf3f",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/wisteria_fall.json",
+      "bytes": 155,
+      "sha256": "0ccfffccdc789e3c2fe8c08ad8c30790fb399029acd6cc3799a1b27a244cfc70",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/wisteria.glb",
+      "bytes": 25484,
+      "sha256": "e3584980d3dddcbac080b024410f77b40ee11629f9b88bd3cb95af74f28018c0",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west/wisteria.json",
+      "bytes": 185,
+      "sha256": "7639a2016697c19c8a758ef7e5a0888092d410ca311ec2bdcac4f9b6b9adbd64",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/places/west.json",
+      "bytes": 36745,
+      "sha256": "7cfd233d9ca7abd5407dfdcd37b8345c6a2ab56d8880a5afb5056ee039f005e9",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/shore/shore.bin",
+      "bytes": 106604,
+      "sha256": "689410620e0f51a6f388ff15c20e0c70a03fa768fde5e33b53b3a94839d5815e",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/shore/shore.json",
+      "bytes": 9766,
+      "sha256": "4abfbe5374a11578905110d2438432737dfd990195b737be9563ba8f95249559",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/height.u16",
+      "bytes": 33554432,
+      "sha256": "8506105e460640026e7aaa182d95d5b3ea2b46568dbbb38446ea1c87f7da2c48",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/light.png",
+      "bytes": 4379399,
+      "sha256": "7c44be7d97ada82b4e22e30a8e57a7d321a07b0cd7e7c1dfe78cc5f9559b9a95",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/meta.json",
+      "bytes": 15169,
+      "sha256": "113110f6eac1693a0ef3e3791482881986bf3050d0b0c339e79fe5481c10e336",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/preview.png",
+      "bytes": 1590667,
+      "sha256": "1b2329d64a393a450bc784d8981e4eb9523ea368a8e1321f64ac0020af64352f",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/props.json",
+      "bytes": 6633,
+      "sha256": "e7ede80757854c2952f47b584127bca156b2d606dca6f8f359d25b3070de4574",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/splat.png",
+      "bytes": 1828933,
+      "sha256": "bb1ac9351707bd04e714ff7f73c7877eb3645b38df5fe7641d8648d39cb011ee",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/terrain/tint.png",
+      "bytes": 742587,
+      "sha256": "266760c1e71fad5e17f73a6d8657cc5f2458ceb3adabe166308bd4007c35a77e",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/textures/cliff_c.webp",
+      "bytes": 874628,
+      "sha256": "d99bcfd22a7eb4174011ab0c515ac167f604edcaa3924716cebcb29a9bfd1647",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/cliff_n.webp",
+      "bytes": 392254,
+      "sha256": "10a7c00cdcc5d83640d80680a5f7ff068e0e07f19ff335e7944ed2a04220cce7",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/cobble_c.webp",
+      "bytes": 195964,
+      "sha256": "d40757f7c8b843de4d6b07d8ec8b4ea9d73c2af3465e781bc5d125210a631f70",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/cobble_n.webp",
+      "bytes": 57462,
+      "sha256": "9a8fbe55381831fa3e1c0d5038a80ce70f31aca777f09023ffb062da7fbc6b74",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/flagstone_c.webp",
+      "bytes": 127312,
+      "sha256": "2c1caa956dfaca2a6a7bf34a12eab59fb30cc3f05e14a0b21fc68c3d8c344c6f",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/flagstone_n.webp",
+      "bytes": 45202,
+      "sha256": "5c52238c510b814d69585924e9b38db9cc9185cd42ec87dc0d23eb31c753868e",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/ground_c.webp",
+      "bytes": 1559588,
+      "sha256": "18512f3bd228c7239f622e31eb23916bcde666e81856cc25d9f906d6fa4d9647",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/ground_n.webp",
+      "bytes": 819478,
+      "sha256": "955590e865c421083c64c51e4f1d0258c00570a074247b4654fd194c33621bb7",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/materials.json",
+      "bytes": 541,
+      "sha256": "23ba43f2de3ea37df97e25fb57022b4fa729a92d918a28c2848469b28e1ec159",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/pebbles_c.webp",
+      "bytes": 824112,
+      "sha256": "36c04b7deba16742c6d7379b6927ac10aaeb86c0f8eab488a08a0716b86d1d8a",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/pebbles_n.webp",
+      "bytes": 219776,
+      "sha256": "af7e684167823118d25f15789377ce49c444445e2c6b74e98e1f6595f3170206",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/rock_c.webp",
+      "bytes": 900294,
+      "sha256": "81368fe5c29e576dec9034accda1e18fc50b0b650499fb71b49d8fdcb42edb04",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/rock_n.webp",
+      "bytes": 541664,
+      "sha256": "57a472b07acccfedc01b9e38587ca8c91b40f10e1c3a373f3cc0228c873e93fc",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/sand_c.webp",
+      "bytes": 596282,
+      "sha256": "891879c9bbbf8f20c3414aa131d60af8fbce5bdf6cb284ab35e16f7d0fa8edb7",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/sand_n.webp",
+      "bytes": 162708,
+      "sha256": "62f54e1d35713860d5c10abe0fffddf38ca3bf3dc43098696c8035ff382a0e92",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/scree_c.webp",
+      "bytes": 1145790,
+      "sha256": "300eb4dfb68e6a3f78ad589accb474b1fc955deb6535a1321fa2003a943c771f",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/textures/scree_n.webp",
+      "bytes": 493858,
+      "sha256": "136360648c101a2944bbd6f55c54f49d8c5497816ef68c2c2b23d47299f0560b",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/cairnwick_mask.png",
+      "bytes": 23242,
+      "sha256": "d391637153e3d7c41d2074013940598cedd10860a4ee910796c81da2236052bd",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/cairnwick.bin",
+      "bytes": 10427172,
+      "sha256": "87a55100636efeea7de019ed9f7d680357b15d952e540df111d65ffe659eacb2",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/cairnwick.json",
+      "bytes": 24302,
+      "sha256": "5c101de361c0ebd5278d1cde71fe2e5227586091d2773d752df70c9ccd05e199",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/fields.bin",
+      "bytes": 12404076,
+      "sha256": "76998bb9bb27c06d0150a866fc9e79f9b29135419a0207f504d7b6cbe175ed33",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/fields.json",
+      "bytes": 44482,
+      "sha256": "fd19d495e62d1e8be6ecbfd9b9e3afe1a90a1b4a4c05aa665b4b5a68d8f0b957",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/index.json",
+      "bytes": 573,
+      "sha256": "e5847fcf2221b13a30359e557a2b1c4e9302700d04d9228baba5ec848364653d",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/larkhaven_mask.png",
+      "bytes": 70572,
+      "sha256": "81279237c871f58697e4f1c956e7dd0a685a038d06a899c23f0d79e1cd6d57b4",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/larkhaven.bin",
+      "bytes": 49242248,
+      "sha256": "c21f34a0bb6df9257c367f1ac387a19a49289cf5f9f751ea7901fe534b761204",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/larkhaven.json",
+      "bytes": 106083,
+      "sha256": "044b1e827604158a1118fd4d50f34a53825dfe259f669306b0154a595389f39a",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/layout.json",
+      "bytes": 69398,
+      "sha256": "d7d57dcf605d64425e547b5d440fe249b62377948a991170b436c9a00c827d5d",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/masks.json",
+      "bytes": 214,
+      "sha256": "c8c69613d29b3ccd5e041e40485f2f8a14d537d76b88380b2406bbba50745853",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/sites.json",
+      "bytes": 40966,
+      "sha256": "6de48784b19cc71013f2a5d9af6d9d8edd3b9f952bb3eb5b9746a12279e3c28b",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "assets/town/tex/ashlar_c.webp",
+      "bytes": 75028,
+      "sha256": "cd174439b2fd0b11b03cc32c02fb9e693521dbf724a3dc52d07c655dc2790400",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/ashlar_n.webp",
+      "bytes": 17878,
+      "sha256": "f8908778e50bb249b8f4568c5b6104dbe40456aa9d7720683a12c513f59b7186",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/brick_c.webp",
+      "bytes": 146406,
+      "sha256": "8615014e0fab803b17e2c8b496e77039a96fb20ad97f0d6088ebedeebdf937f7",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/brick_n.webp",
+      "bytes": 75550,
+      "sha256": "5b3f548325ae46c0e31d650e2fd0baa358c7155cff69fa3257b1164a87b2e7b5",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/cobble_c.webp",
+      "bytes": 195964,
+      "sha256": "d40757f7c8b843de4d6b07d8ec8b4ea9d73c2af3465e781bc5d125210a631f70",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/cobble_n.webp",
+      "bytes": 57462,
+      "sha256": "9a8fbe55381831fa3e1c0d5038a80ce70f31aca777f09023ffb062da7fbc6b74",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/flagstone_c.webp",
+      "bytes": 127312,
+      "sha256": "2c1caa956dfaca2a6a7bf34a12eab59fb30cc3f05e14a0b21fc68c3d8c344c6f",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/flagstone_n.webp",
+      "bytes": 45202,
+      "sha256": "5c52238c510b814d69585924e9b38db9cc9185cd42ec87dc0d23eb31c753868e",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/ivy_c.webp",
+      "bytes": 320782,
+      "sha256": "b4cb847e8ca5ac9a461586b0b8597af971cc6abe49e1345d5ecfc7d62eeff388",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/ivy_n.webp",
+      "bytes": 140420,
+      "sha256": "ded54bfdaf798a9b0294b67857c7397708cbe2af96af5d946066395224aa1bf9",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/masonry_c.webp",
+      "bytes": 210180,
+      "sha256": "0f8892ce71984a081bb81d746f0decbd18223f0c5b02ccb14bf7f88b0b457d33",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/masonry_n.webp",
+      "bytes": 114934,
+      "sha256": "cb60e7637a2f52c3222b31c851d3d9c7c60d17709386f2bc37d4833c8043457a",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/materials.json",
+      "bytes": 1093,
+      "sha256": "91ed1f1ac5aa2687a6207e337a56688ef255ef9cdf1c3717ecafc29e50754353",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/planks_c.webp",
+      "bytes": 80706,
+      "sha256": "2fe501b5360c5fe6313dca8e9ce3b1386889127078e6762e28ce7e92560901ea",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/planks_n.webp",
+      "bytes": 18120,
+      "sha256": "fda3e22a8d699ac81b0f28b47949afd60e3aa15a80777dd9c9ce6230f5bb75f8",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/plaster_c.webp",
+      "bytes": 76824,
+      "sha256": "08b28b97386c93a972af591df379dd6a17fe56d032a3e24f23b52ebf03bcfb16",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/plaster_n.webp",
+      "bytes": 2984,
+      "sha256": "6001ea8cb0fd08389fd61e829a83491ae9dcd1e82266bcc11c2890d9906e1518",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/shingle_c.webp",
+      "bytes": 145146,
+      "sha256": "10bed145f7bf0c56bd248d81eaf60fe24289287fb750e3d610edbc5d0a233b0d",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/shingle_n.webp",
+      "bytes": 30862,
+      "sha256": "730a129077a9b6eb863073282ca65369733229c4abd6cd8afc816ef4045c765d",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/slate_c.webp",
+      "bytes": 171480,
+      "sha256": "92b934ee22e8882191f51910e381b5870f54148ab9f5a1c8e03405cade53b64c",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/slate_n.webp",
+      "bytes": 65550,
+      "sha256": "93296a63dc7baf2576db936b472eabfd371fe72fbc02b43e5329afb7e2e492f3",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/thatch_c.webp",
+      "bytes": 201096,
+      "sha256": "40fb10c177c233f95b4fda3a81c43816a9ee0c1b34f7e5ca147a5770ccb5ed21",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/thatch_n.webp",
+      "bytes": 80050,
+      "sha256": "43b31a868de842693bbcfd801e309af0edcb6c8f38465c53d912b61f8cad579d",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/tiles_c.webp",
+      "bytes": 199110,
+      "sha256": "10fc821f0b047b0ef822b3e056bd2058702b895f3b433b863f30f839796dad91",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/tiles_n.webp",
+      "bytes": 60298,
+      "sha256": "39f56e9062cff979cb9468e72452036df542a9961db96ae0fae3c68d7fae3800",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/timber_c.webp",
+      "bytes": 164800,
+      "sha256": "35b8a378ee08b78adf7e2d370199937754ed70e01944b82ad2ab732ecd6a10c3",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "assets/town/tex/timber_n.webp",
+      "bytes": 59780,
+      "sha256": "f423ece9a09d0506c911e16706b292c14776b73bbfe7323b11b11698de2a53b1",
+      "license": "fal patina output; verify fal/model terms"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3179,
+      "sha256": "3e119a0bf2ca8fa1d640e430dae9f45de791b85e1758cf16c409c19175420aeb",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1069,
+      "sha256": "12b60805e440dcf56c7c1347e2eada1105e7c143ee4642fe712a3958cc3e6c6f",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 543,
+      "sha256": "653107486f32384f38f13c77e80a7c7587486740af7fb85f0c50ca48b09b24e4",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "package.json",
+      "bytes": 313,
+      "sha256": "554b135ed2c55005040daab4173f434a72b956db932eae13fc3768185339485c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12503,
+      "sha256": "a8247aa0e96605aafb48460e48eae9181fd8cbe19362ecd5f7422a96de89bc60",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/audio/audio.js",
+      "bytes": 10407,
+      "sha256": "abc349dbf616d39ba795531486edeb6e48c34cc60219138c4722e35606665c35",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/core/ctx.js",
+      "bytes": 3199,
+      "sha256": "f23a781b75c0ed098b87454bcdb9fb1b5e15e4c19722d2d43661d55aa97b2f22",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/core/pipeline.js",
+      "bytes": 15959,
+      "sha256": "0495e8d0ce275729e2a4d2fb4a15707635956ad308fcc591a6a2cf5260359085",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/fx/particles.js",
+      "bytes": 28814,
+      "sha256": "df51b53d98044f409348b9ca803c95e9667878dbf865c8fd17b1a50a3099dcc4",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/fx/strip.js",
+      "bytes": 9414,
+      "sha256": "30ba7b0d210ca1167a80ce9788407d291287a2d8cc2bc750faff43ae307516f9",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/fx/vortex.js",
+      "bytes": 27294,
+      "sha256": "86ae33f29acd10baa3e21a7f136ff43b925fd10bf86ad4fab7d688d3b655e85b",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/fx/wake.js",
+      "bytes": 8394,
+      "sha256": "af6b512db94af24712fe320d5765056f6ecc6be7dbadfe0f855c2a26bb37d6a4",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/fx/windfx.js",
+      "bytes": 28676,
+      "sha256": "d33c23c5dc5f368bc0c80a433686316559baad295d6b16ac301ef1942327fa13",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/approach.js",
+      "bytes": 9408,
+      "sha256": "3778d97a579915b936b2559980e86f4d4b55eababefd0d4039e1ffc9dbe2f744",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/beacons.js",
+      "bytes": 13133,
+      "sha256": "16d6cbfa82492ba4b16c30d25a844672904fa7cc059da9d5161d311fe3499cde",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/courier.js",
+      "bytes": 4674,
+      "sha256": "fa7a17c74e41b5d29a7bbeee04f4805efc56f95819cdb6b85155952dc33d446c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/hud.js",
+      "bytes": 3294,
+      "sha256": "0ad9f0ff6dd1bc0eda94ec4de8079d6f04768eed66452e0b97a10c042c12445a",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/index.js",
+      "bytes": 9195,
+      "sha256": "26494a2b9ef4fe0a3a750b6dcaedfd668a1b26f7c6ccdec76586749aa6a364ae",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/landing.js",
+      "bytes": 27205,
+      "sha256": "9e379a62dc982604531d36e5ddff415fd046d4cb8addba2302de6edc0c8a09b7",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/padtest.js",
+      "bytes": 6496,
+      "sha256": "ab39d9f41771346b2cf0c8e7e556f4591819cc17a124adb38f861834578f0cd0",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/sparks.js",
+      "bytes": 3338,
+      "sha256": "ebf85011c150c6030d39b42fbeb52285238205b10063f8326fe2b8bd36d8c6bd",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/game/tricks.js",
+      "bytes": 5518,
+      "sha256": "33d57e9186372e45d0f2f8c63ec86cf29363c25eeba9d771c7b7f125bc304e63",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 21445,
+      "sha256": "651232965f25ae548ab8ce31091822f0adafcfa4c11ccfb1cb966bb36271bab5",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/player/camera.js",
+      "bytes": 10458,
+      "sha256": "639e8f370e551bc4c8edbaad867874f1d2456681fafc0ddc8e3e0d653c79efd7",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/player/flight.js",
+      "bytes": 23368,
+      "sha256": "7026019b8d109be03ce9971798d22c7cf9a6fc74d5791a6d4ccbbe2f72e6d6c4",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/player/input.js",
+      "bytes": 4546,
+      "sha256": "216a2331d7987ed12fabb7fef9954684a26327ce381bbb83768f53a9558741a4",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/player/rider.js",
+      "bytes": 17786,
+      "sha256": "c3cd75903d625a56f494ae126338387fb9a5ef3b0ff54e0447012532d3067419",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/shaders/common.js",
+      "bytes": 14996,
+      "sha256": "4f7f1ec32bdc5d87bfdaffe8559590b7a13700d29fca9e431483957fa352544e",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/ui/journal.css",
+      "bytes": 4741,
+      "sha256": "ab2ca0eac48807809955dc6a99fb19b082cac87f62fca3ae75baccd479043ab9",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/ui/journal.js",
+      "bytes": 5095,
+      "sha256": "e9dbc04d037a35430609b8f09518bcb4daf262be1d3280fa3bbf144c13292682",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/ui/style.css",
+      "bytes": 8025,
+      "sha256": "f55f3b804ea3b3a1b0615edfe0ac90e2cacfe7255d9ba89f05670b89ff527e76",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/clouds.js",
+      "bytes": 10715,
+      "sha256": "2662cf1ef751cbe5f3cf597436fa35ca23b9dd78bb51df1e2a78c6168f6efdc1",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/meadow.js",
+      "bytes": 26821,
+      "sha256": "4f9c6f0b6dedbd8209d8f2cfe8445407cb13fac883ddbfadf7e1d46f4409c52b",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/places.js",
+      "bytes": 43119,
+      "sha256": "70290ab1f579101df8dab6ba68ef2981d3d4eb91679619023676e75093aba885",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/props.js",
+      "bytes": 10796,
+      "sha256": "d5827bbebbb4b63becdecdcef25f91c095d02c7e1b71186228447553a1987e8f",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/river.js",
+      "bytes": 15689,
+      "sha256": "aec8e1de1b320ab5cb4fd71e6541712d78aac38fc5434e75131d4933ab84c43c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/seeds.js",
+      "bytes": 7552,
+      "sha256": "34bb4783b4dc5236c2e557a11aabbb6ceaf8aa1485812e00ed426a086011ec6c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/shore.js",
+      "bytes": 99948,
+      "sha256": "b208ad6ac5f1d54c960615e7e724412e0fac2b39bd8b2372bf989a1f6c67e77c",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/sky.js",
+      "bytes": 4221,
+      "sha256": "691fb27c22e5a94be435dcfbc7c72cece4eaa9c161884e6f14f26004a043ea52",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/terrain.js",
+      "bytes": 31485,
+      "sha256": "67e1d9522a0bc8204e833137f33a0dfe31ab77387b62d2d9b0284909aa89d5b9",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/town.js",
+      "bytes": 18555,
+      "sha256": "d0bd21358e00ac3dc605e67ec756478b31ce057bca580f27b406429985716165",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "src/world/water.js",
+      "bytes": 18968,
+      "sha256": "6cfdc9c8526453a9cbebf3a117470687849ced971285bc80b472dab452af1be0",
+      "license": "Petalwake MIT (code/baked asset)"
+    },
+    {
+      "path": "vendor/three/build/three.core.js",
+      "bytes": 1474799,
+      "sha256": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "bytes": 658900,
+      "sha256": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    },
+    {
+      "path": "vendor/three/examples/jsm/libs/meshopt_decoder.module.js",
+      "bytes": 29256,
+      "sha256": "d428e73a000057c6c94bfcedc3412d0c2dc14ca8800e88553aab05113ad2bf19",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 119861,
+      "sha256": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 39153,
+      "sha256": "7bda2a8ba836b2bcf67cb938d4b9e1bb5d1b1bc616817103ed858c0b58296ce7",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/SkeletonUtils.js",
+      "bytes": 11535,
+      "sha256": "b1632a703206c3d830de9fcbe515696770d04b71a15ee6b50afa6d2c3298c86f",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "license": "three.js MIT (see vendor/three/LICENSE)"
+    }
+  ]
+}

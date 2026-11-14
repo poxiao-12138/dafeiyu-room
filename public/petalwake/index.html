@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>飞行王国 · Petalwake</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/ui/style.css">
+<link rel="stylesheet" href="./src/ui/journal.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/build/three.module.js", "three/addons/": "./vendor/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="view"></canvas>
+
+<div id="hud" hidden>
+  <div class="hud-tl">
+    <div class="seeds"><span class="seeds-icon"></span><span id="seedCount">0</span><span class="seeds-of">/ <span id="seedTotal">0</span></span>
+      <span class="compass" id="compass" title="nearest wind seed"><svg viewBox="-12 -12 24 24" width="22" height="22"><path d="M0 -9 L5 6 L0 3 L-5 6 Z" fill="currentColor"/></svg><span id="seedDist"></span></span>
+    </div>
+    <div class="place" id="place"></div>
+  </div>
+  <div class="hud-bl">
+    <div class="gust"><div class="gust-fill" id="gustFill"></div></div>
+    <div class="gust-label">gust</div>
+    <div class="trick" id="trick" hidden><kbd>Q</kbd>kickflip</div>
+  </div>
+  <div class="hud-br"><span id="speed">0</span><small>km/h</small></div>
+  <div class="hud-tr" id="job" hidden>
+    <div class="job-kicker"><span class="job-icon"></span>parcel for</div>
+    <div class="job-name"><span id="jobName"></span><span class="job-spot" id="jobSpot"></span></div>
+    <div class="job-meta"><span class="compass" id="jobCompass" title="where the parcel is going"><svg viewBox="-12 -12 24 24" width="22" height="22"><path d="M0 -9 L5 6 L0 3 L-5 6 Z" fill="currentColor"/></svg><span id="jobDist"></span></span><span class="job-count"><span id="jobCount">0</span> delivered</span></div>
+  </div>
+  <div class="prompt" id="prompt"></div>
+  <div class="card" id="card"><div class="card-kicker" id="cardKicker"></div><div class="card-name" id="cardName"></div><div class="card-sub" id="cardSub"></div></div>
+  <div class="toast" id="toast"></div>
+</div>
+
+<div id="title">
+  <div class="title-inner">
+    <p class="kicker">Petalwake · 一把扫把，一座岛，一阵好风</p>
+    <h1>飞行王国</h1>
+    <div class="bar"><div class="bar-fill" id="loadFill"></div></div>
+    <p class="status" id="loadStatus">gathering the wind…</p>
+    <button id="start" hidden>起飞</button>
+    <div class="keys" id="keys" hidden>
+      <div><kbd>W</kbd><kbd>S</kbd> 俯冲 · 爬升</div>
+      <div><kbd>A</kbd><kbd>D</kbd> 侧倾转向</div>
+      <div><kbd>Shift</kbd> 乘风加速</div>
+      <div><kbd>Space</kbd> 抬升</div>
+      <div><kbd>鼠标</kbd> 转向 · <kbd>C</kbd> 镜头 · <kbd>I</kbd> 反转俯仰</div>
+      <div><kbd>P</kbd> 隐藏 HUD · <kbd>M</kbd> 静音 · <kbd>J</kbd> 日志</div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

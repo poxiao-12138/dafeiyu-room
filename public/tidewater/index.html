@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>潮汐水域 Tidewater</title>
+	<link rel="preload" as="image" href="ui/keyart-720.jpg" imagesrcset="ui/keyart-720.jpg 1280w, ui/keyart.jpg 1440w" imagesizes="100vw" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Caveat+Brush&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
+	<style>html,body{background:#000;width:100%;height:100%;margin:0;padding:0;overflow:hidden}#app,#app canvas{display:block}#fps{z-index:50;color:#e8f6ff;pointer-events:none;-webkit-backdrop-filter:blur(8px);letter-spacing:.02em;background:#080e168c;border-radius:6px;padding:5px 9px;font:500 12px/1.2 JetBrains Mono,ui-monospace,monospace;position:fixed;top:10px;left:12px}html.scene-only #fps,html.scene-only .gm-purse,html.scene-only .gm-fight,html.scene-only .gm-bite,html.scene-only .gm-cast,html.scene-only .gm-dot,html.scene-only .gm-panel,html.scene-only .gm-map,html.scene-only .tw-rail,html.scene-only .tw-panel,html.scene-only .tw-help,html.scene-only .tw-toasts,html.scene-only .tw-prompt,html.scene-only .tw-depth,html.scene-only .tw-boat,html.scene-only .tw-stats,html.scene-only .tw-brand,html.scene-only .tw-mode,html.scene-only .tw-photo-hint,html.scene-only .tw-tip,html.scene-only .tw-start-keys,html.scene-only .loader-tips{display:none!important}</style>
+  <script type="module" crossorigin src="./assets/index-BSfKl3fQ.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/GPU-CCgDO5fU.js">
+  <link rel="modulepreload" crossorigin href="./assets/Frame-Baeda3sr.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BLPDbtK3.css">
+</head>
+<body>
+	<div id="app"></div>
+	<div id="fps">-- fps</div>
+	<div id="loader" role="status" aria-live="polite" aria-label="正在加载潮汐水域">
+		<img class="loader-art" src="ui/keyart-720.jpg" srcset="ui/keyart-720.jpg 1280w, ui/keyart.jpg 1440w" sizes="100vw" alt="" decoding="async" fetchpriority="high" onload="this.classList.add('is-in')" />
+		<div class="loader-scrim"></div>
+		<div class="loader-inner">
+			<div class="loader-brand">
+				<p class="loader-kicker">一座海岛钓鱼游戏</p>
+				<h1 class="loader-title">TIDEWATER</h1>
+				<p class="loader-tagline">开船出海，去礁石和深水区钓鱼，在天黑前把渔获卖给乔。</p>
+			</div>
+			<div class="loader-panel">
+				<div class="loader-row">
+					<span class="loader-status">正在启动…</span>
+					<span class="loader-meta"><span class="loader-pct">0%</span><span class="loader-time">0:00</span></span>
+				</div>
+				<div class="loader-bar"><div class="loader-fill"></div><div class="loader-glint"></div></div>
+				<div class="loader-note">首次启动需要编译着色器，可能要等一两分钟；之后再打开会快很多。</div>
+				<div class="loader-tips">
+					<span class="loader-tip-label">提示</span>
+					<div class="loader-tip-list">
+						<p class="loader-tip">按 <kbd>R</kbd> 拿出鱼竿。按住鼠标左键蓄力，松开抛竿：按得越久，抛得越远。</p>
+						<p class="loader-tip">盯住浮漂。先轻点几下，然后被猛地拖入水中——就在那一刻点左键刺鱼。</p>
+						<p class="loader-tip">中鱼后按住收线，但要让鱼线张力保持在绿色区域。鱼发力时松手，否则线会断。</p>
+						<p class="loader-tip">能钓到什么，取决于钓点：浅滩、礁石、陡坡外的深水，以及一天中的时间。</p>
+						<p class="loader-tip">码头边鱼摊的乔会收你的渔获。鱼按重量卖，越大的鱼越值钱。</p>
+						<p class="loader-tip">船屋的玛塔卖升级：更结实的鱼线、更快的渔轮、更大的鱼舱、更多燃油和鱼探仪。</p>
+						<p class="loader-tip">在船边按 <kbd>E</kbd> 上船，在舵轮前按 <kbd>E</kbd> 掌舵，再按一次可以离开舵轮在甲板走动。</p>
+						<p class="loader-tip">按 <kbd>I</kbd> 打开保温箱和鱼类图鉴。装上玛塔卖的甲板灯，天黑后也能钓鱼。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

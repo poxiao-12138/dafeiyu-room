@@ -1,0 +1,901 @@
+{
+  "format": 1,
+  "project": "Tidewater",
+  "source": "https://github.com/dgreenheck/tidewater/tree/4811ba48d795197de5621985f404e765c0b7c0ef",
+  "files": [
+    {
+      "path": "assets/Bench-CE27oHIQ.js",
+      "bytes": 5287,
+      "sha256": "c5c35f05e6421eaf6eb34593a965c89ad54027065f14cd76330354925a4b5d51",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "assets/Frame-Baeda3sr.js",
+      "bytes": 67108,
+      "sha256": "abe20f10a9bd5cc2b5650839c40793448f6e74345482aa255d9fec61536d6fe8",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "assets/GPU-CCgDO5fU.js",
+      "bytes": 5691,
+      "sha256": "8e424cad13ddab6411464605ff8a9c53cffed08cae8310e635f341042fda51cf",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "assets/index-BLPDbtK3.css",
+      "bytes": 45866,
+      "sha256": "4c2eaac7de99f019beb4c2b40416bccf3e2c66aa6886c81e1b2124fe5d8fadeb",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "assets/index-BSfKl3fQ.js",
+      "bytes": 1827985,
+      "sha256": "1069c5f74e388a19309067615383d35d61e8c7574886d2a7559be92b8ab67926",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/bail_click.ogg",
+      "bytes": 13369,
+      "sha256": "42236eb210ce7a0cc54b28c13e5d5dd00e0782ecde3b3a61561a177bb0f5cabc",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/big_splash.ogg",
+      "bytes": 31718,
+      "sha256": "b3401965c8536d93dffa62a793ca45a34b185d0d0bb28f58f16b35a19990c38e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/bird_dove.ogg",
+      "bytes": 128894,
+      "sha256": "156f11da57c25ab4ee05af27a2d38f01195bad8283f1ee2424c0e6e185f7b6c9",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/bird_forest.ogg",
+      "bytes": 159596,
+      "sha256": "a5368bcbbaae5b7521322f225cab99f644abab975c6c5db1a17b9232ada6f032",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/birds_dawn.ogg",
+      "bytes": 378131,
+      "sha256": "4647b53f1409faab746a18f946e76b4f4002ec6821c2be62e6f9a4f40da694a4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/boat_engine.ogg",
+      "bytes": 411828,
+      "sha256": "9ae124875c9290c1f3b57f5fe4504b640e0f131949ddc7f278b3725d616137d9",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/boat_lap.ogg",
+      "bytes": 293262,
+      "sha256": "90c0b619f22842e8625520e36d6da6cad6d3cf21ade49c36a77d03ddcbde9bb8",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/boat_rush.ogg",
+      "bytes": 318170,
+      "sha256": "c5ea66614be5bce2787ba4ee8478433c18fd3e80e7b2bafa5365664ecf72ca5e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/coins.ogg",
+      "bytes": 15872,
+      "sha256": "caf26599903959eb27f5b3660e8c6f3c9d317917848a86174e16f4b465ab5e92",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/CREDITS.md",
+      "bytes": 10394,
+      "sha256": "1ce3b28a2a36237bb3ab101bd0e7e2accff37475e95d16f8e27d420b11605207",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/crickets.ogg",
+      "bytes": 341489,
+      "sha256": "01b41d7e8fc719373f77f41f3936e8ccfdfee4aadea1a1dd1120206b2115d76c",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/emerge.ogg",
+      "bytes": 9254,
+      "sha256": "6b06f80b49a1dc03daa0ec0bc02e6a0b68c8d36c2af16cbaf0a9874bb4320759",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/fish_flop.ogg",
+      "bytes": 25121,
+      "sha256": "c1425bfbd966e387409f83c8c1aa16c8a553703957b24af46b4c863776eb0c87",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/fish_splash.ogg",
+      "bytes": 38203,
+      "sha256": "7c3b51bdf54b08bd53364aceb603c19e6e6c7f961f9d8f7385fac65d269e5897",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/gull.ogg",
+      "bytes": 55921,
+      "sha256": "467dd8e48f66c5b497f051c622ca7f753b9bf30eaf1ca7b9162b8e234bb674bb",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/hull_slap.ogg",
+      "bytes": 27436,
+      "sha256": "a0d74ee5d1dc174de4a2806090bfa4005999dfa9a038cb2067bd85f1ec1ef0f9",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/line_out.ogg",
+      "bytes": 5795,
+      "sha256": "5fdf20746905ed2a1ca8a9dc2ca58cfa1e74762922413f6f0fa12bc1f5875409",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/line_snap.ogg",
+      "bytes": 20929,
+      "sha256": "2a312b716065f7c676d56ed3b31b6ffef8194cbb00159337b2a65b9a998c860d",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/line_strain.ogg",
+      "bytes": 9264,
+      "sha256": "4f7e9604609b4d2daed797d85894f0c1f68b0242f34c980e4687664686a965d1",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/palms.ogg",
+      "bytes": 357078,
+      "sha256": "33c89a41d0e0592cb2b6fd5592fab4e7333b090dace7fd755334cc145ef51820",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/pier_lap.ogg",
+      "bytes": 287231,
+      "sha256": "e020be075543b148dfb2b47540a605c1a30d25e5d18206b945b949b96a32079a",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/plop.ogg",
+      "bytes": 11220,
+      "sha256": "b648df37071652a2335aa34f3a73e03aeb3bd8201c26d65951ebac0779b6c6f7",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/reel_drag.ogg",
+      "bytes": 38165,
+      "sha256": "e22d713852e49557b535b9e08cb35911a696935eb87e67ee7b1e9490d0ed3085",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/reel_wind.ogg",
+      "bytes": 70632,
+      "sha256": "6783e26b193865bf0c143e61c0b1c63a18f554fd21e9ef6f4b9f5997fde0d61f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/rod_swish.ogg",
+      "bytes": 24086,
+      "sha256": "5637f21cc6d11e6e16f1806997267117bb34e0a190277f2569c5ba8f1f234184",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/splash.ogg",
+      "bytes": 63034,
+      "sha256": "9de4dab53ab34891dcfe14be3160c5cb6770364e007c83cec8d0d79065a49ee0",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/step_grass.ogg",
+      "bytes": 19268,
+      "sha256": "31be902e1ddf2530867d447cc3ae602a03c9aa60293d515f27359dbafd5ceb87",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/step_rock.ogg",
+      "bytes": 21541,
+      "sha256": "82b0a1bb6344b982c789988d99d9d324493ea0a1e7fd1668c0ca2081e8895157",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/step_sand.ogg",
+      "bytes": 22902,
+      "sha256": "3128efca52668d0aad8ec243963a691b969e2327c5c740f41c71fe624c96242e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/step_water.ogg",
+      "bytes": 37998,
+      "sha256": "e8b03fa5acd8d09286e1b3907b5c86dbcfaa6064afe59cb375a37b4abac7636e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/step_wetsand.ogg",
+      "bytes": 17584,
+      "sha256": "c48ebf1ee3124be44d5348689b0e2c32513370c6975d27bde509d6a42a05c9b4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/step_wood.ogg",
+      "bytes": 22476,
+      "sha256": "90cb5daf01a8f122bf0a08504f2216869008b0943e588c4bc637f1bd187210d8",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/submerge.ogg",
+      "bytes": 15989,
+      "sha256": "56b2f265bb453da7daf1775ca9d2a9c3e6366758d0c0d906b791c4996bdd36c2",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/surf_backwash.ogg",
+      "bytes": 108825,
+      "sha256": "9e771de117448c7d672c888a472777a9074b63ab904a5c121f5624f4f4fa4b81",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/surf_crash.ogg",
+      "bytes": 132426,
+      "sha256": "9e09d4ec25c4b31114f7c44c1a2a57e8d84589caa64592817df5b79d8174e6ea",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/surf_far.ogg",
+      "bytes": 365150,
+      "sha256": "a4c0068c83ae7752c0b666cf06548ac917aefd61bb49f970d9f19d52b4f7eaa4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/surf_wash.ogg",
+      "bytes": 75291,
+      "sha256": "cad02b8c23a584290da4a7e73742e9477d4088d927aae19c1b852f1cf53619c7",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/swim.ogg",
+      "bytes": 29543,
+      "sha256": "cf45000f1b0ad2b0f330b2dde654a53ea64ce3484301d024c32bd57dd32bffdc",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/tern.ogg",
+      "bytes": 108719,
+      "sha256": "981c538c1db50380f3a7afe04656f7b08d60ebd1c1be84fcc6052f70d7175559",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/under_reef.ogg",
+      "bytes": 412371,
+      "sha256": "121952cc2e09a3a30712e2d1038a00366e2cbad3dccf1fa2388261487028249f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/uw_swim.ogg",
+      "bytes": 37646,
+      "sha256": "b52eae0e40747edb6f84e12f0bf62674e667004204cc35929182c73abd98b00f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/whale_blow.ogg",
+      "bytes": 37617,
+      "sha256": "549b6b6c1fcba1617d30b632332d21a168e48cde7f1cfad5906b64096d057e0f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/whale_song.ogg",
+      "bytes": 373991,
+      "sha256": "5452f85dda448630503eacee842737b72a6731bfa4989edd7e4df7e6eb8de45f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "audio/wind.ogg",
+      "bytes": 415921,
+      "sha256": "3e5d45f75364bf797f375061ed0232724e0570c1ff8f64c4c97498093e1789ec",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "clouds/baseShape64.bin",
+      "bytes": 908287,
+      "sha256": "1e11118d70768aaeb0050ff3dd19d0c9f4321e5dc02eda8c6805e838f89c35c4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "clouds/blueNoise.bin",
+      "bytes": 4096,
+      "sha256": "982b0312f19ed4a737f55be30d965d85ec05d63bee679ea28c488cc8db323cc0",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "clouds/LICENSING.md",
+      "bytes": 1123,
+      "sha256": "49a92b94c0037891fd16910ee4110b2ca8f3d2cdee7216ef1e48e646f5e7b384",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "CREDITS.md",
+      "bytes": 5148,
+      "sha256": "49706aaa01bc73b678bed06aaa456e01924299e6ee109a5cdccd2e6a07fe5fcd",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4342,
+      "sha256": "9c953d1f2d900d11233341570a38073ff1eab39a4da1b75cda94de651a141e69",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "413204504456b6b29e99d565629023e9aeee5916907e41fe8ffe8549219348ec",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/characters/dafeiyu.glb",
+      "bytes": 25381944,
+      "sha256": "76b5a0ca81f803748e8f5420f7cc99a13bc93eea32883e6362ffcabfdf34ff33",
+      "license": "Dafeiyu.glb - authorized first-party model (THIRD-PARTY-NOTICES.md)"
+    },
+    {
+      "path": "models/characters/joe.glb",
+      "bytes": 4743204,
+      "sha256": "da3efce5a452d3c17f40b8d33bf449f565c0a6bef93602dc3e74364fb64081ca",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/characters/LICENSE-Rocketbox.md",
+      "bytes": 1066,
+      "sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/characters/marta.glb",
+      "bytes": 5507076,
+      "sha256": "2b5eb048c75d37a6815cfc2770ca87dcaba1729b72779f1557c4f4d13b3ba75a",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/cute-whale/cute-whale.bin",
+      "bytes": 2157840,
+      "sha256": "2236d1bc13dada0c0e16f3155cc8f15c957458ec4a8a163fedbffb7ca8a7bb10",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/cute-whale/cute-whale.json",
+      "bytes": 259,
+      "sha256": "efd7248ba4052feca5ebed1f64227d0a1fa9d212a36f3cd86647f82f76f8d4bf",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/CREDITS.md",
+      "bytes": 1390,
+      "sha256": "97798436efce4cb6302d6fd4c508b064c39a2095e4642b87fb0380b3360f168e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_01_albedo.jpg",
+      "bytes": 720703,
+      "sha256": "2da1b4bdd5ea430d7ad1ba2fb547bf4f18d9def6f711781be89972e004757d2a",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_01_arm.jpg",
+      "bytes": 595028,
+      "sha256": "9fc47d37b740a409fea889edc7f2d7bedac3d970a3a506092e18cfca10d2ed82",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_01_normal.jpg",
+      "bytes": 1023490,
+      "sha256": "1d6603df36d0dd711d73e0ae2f067cd96f63d5e3ab0681d4a85bcb8df2049388",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_01.glb",
+      "bytes": 107568,
+      "sha256": "223c1325855bb5428bef0ed94729b38b19f48933512c67a10c62197dd1a6a328",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_02_albedo.jpg",
+      "bytes": 617273,
+      "sha256": "6519bf7082bb3849c94a43a1f615a4a94547edd59217e05ab1351205eafd88da",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_02_arm.jpg",
+      "bytes": 501350,
+      "sha256": "4cc11b6d5ffd457280ffc2652f40f27c25352447f03afaa0f3e8920b5f597280",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_02_normal.jpg",
+      "bytes": 737343,
+      "sha256": "27007d93991058dcead6a52b877d86bc7f5b27a13e397d5a99e8f00562166533",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_branch_02.glb",
+      "bytes": 106644,
+      "sha256": "5dfac308be9c9c8f8e362e5e2596b000ae706d37afebf4ab9f68ff3b69fa0134",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_trunk_albedo.jpg",
+      "bytes": 768713,
+      "sha256": "53015f7dc3cc9a5ad360439b63c72d90402314201255495684bf6a6499aef7e0",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_trunk_arm.jpg",
+      "bytes": 514214,
+      "sha256": "7aa714956b606c2d4a929d4ab76490db4a45f23a1ec24c66f088867ef363f37a",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_trunk_normal.jpg",
+      "bytes": 573241,
+      "sha256": "b3d987eba87112005529664455a82809da2325420021d494832dd8ba860eb62c",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/dead_quiver_trunk.glb",
+      "bytes": 128644,
+      "sha256": "19a89e0b97270d816555cfe39f3c45a8cfd1452e77c41822219f0947b7d96f3c",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/lambis_shell_albedo.jpg",
+      "bytes": 785669,
+      "sha256": "0b9296a51b8a157fff2245fced2a7723db9db4c7ea3e976802e1f9d3f93b7cc8",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/lambis_shell_arm.jpg",
+      "bytes": 567463,
+      "sha256": "360e5e637404cd8999914ba679d4bcc726b73016b69697631ba7ab33b31b4d2c",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/lambis_shell_normal.jpg",
+      "bytes": 582208,
+      "sha256": "285344a5bd1ea5710fdd0447be0fb7b86bd2b5a8d67f1c93d01d4201d8f3e369",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/debris/lambis_shell.glb",
+      "bytes": 64276,
+      "sha256": "46228f0775fc1e6bea37595d72c8b3080f8adf68fbb522264c6fbab21df15579",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/CREDITS.md",
+      "bytes": 3608,
+      "sha256": "7477484e351f5592808f86f0569d6d3db08d5c82b9bcfe5e1fe9fecbdc352f40",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_fish_knife_0_a.jpg",
+      "bytes": 62747,
+      "sha256": "71c6f06f04fd039367e3825e728fe5b27f9cc4a4702a9429361ccab06f70f8fa",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_fish_knife_0_n.jpg",
+      "bytes": 71662,
+      "sha256": "fdf758fd9c115f6b22711f1636a1b2c0fb45dcc99285d646d14dfc3ad16dc0cd",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_fish_knife_0_r.jpg",
+      "bytes": 98754,
+      "sha256": "5497058bfb56aedeee74b86504bca9e52e5b2415cbed29117c2933df432e79d1",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_fishermans_hat_0_a.jpg",
+      "bytes": 36296,
+      "sha256": "40da7f194859ef0a52bd154cf0e8cffb2b097170c55e689a4606bd548e33f0c9",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_fishermans_hat_0_n.jpg",
+      "bytes": 71097,
+      "sha256": "d42ff8830693639131ea90dcc234bcd4b7d63afed1799ea16ae08fd942a75567",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_fishermans_hat_0_r.jpg",
+      "bytes": 66174,
+      "sha256": "4ba768ea5737f0999a49e6799bc882289c9b54a7a1a27bf1d55e04a320f5419e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_life_jacket_0_a.jpg",
+      "bytes": 51197,
+      "sha256": "43cb5560344cedb38d1db497e28432c6f646833571290cda9c8cf00db1965362",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_life_jacket_0_n.jpg",
+      "bytes": 62218,
+      "sha256": "5f36803c8a2fce1999951d29693a509319d70c01b68075cf81fa9946c502b28a",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_life_jacket_0_r.jpg",
+      "bytes": 69860,
+      "sha256": "fb496c385a6b31e509f84f00d75c3b4fb5d5acad16f76c95463a71dbd98d665e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_lifebuoy_0_a.jpg",
+      "bytes": 77135,
+      "sha256": "b9dba33c840e6cca357eedc15b5f1daac756d6aac713255623ff1b04f3e38f26",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_lifebuoy_0_n.jpg",
+      "bytes": 90349,
+      "sha256": "b5d46416427b8ed92b1a2369e9838b4eb77db77735ad558c46e227810c05f7a9",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_lifebuoy_0_r.jpg",
+      "bytes": 59734,
+      "sha256": "7a292cf89446d3b137dccf70daa570bd7ce98b6a092be94ef21defb664213f97",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_metal_jerrycan_green_0_a.jpg",
+      "bytes": 44244,
+      "sha256": "04a2b977dc8221ea5a980f902ea752cb846e1cca6f1340741bae9f553a7541e2",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_metal_jerrycan_green_0_n.jpg",
+      "bytes": 73176,
+      "sha256": "8ae04a5561e63c5c87cd1fabb2082f9be86b9adcdf65abc1730d533cb86d1de7",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_metal_jerrycan_green_0_r.jpg",
+      "bytes": 116307,
+      "sha256": "0659a22d506ad1355b9931600b10b56f5cb6c3762c27240b8f7dbdf31c51001b",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_metal_toolbox_0_a.jpg",
+      "bytes": 44712,
+      "sha256": "5da452bc8438355894d6ecc108e46c31a4ed3c28b1731e66146c02f257a78fe0",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_metal_toolbox_0_n.jpg",
+      "bytes": 50139,
+      "sha256": "4c1b20de645e04ed2068f3dda9fbf418a444cd661ef3803e023d2606203e3be8",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_metal_toolbox_0_r.jpg",
+      "bytes": 96223,
+      "sha256": "d143b83b93261e086a24c550c91492ccb34ddf740e9cd607b958b2069b044785",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_plastic_jerrycan_0_a.jpg",
+      "bytes": 55495,
+      "sha256": "4ed9d3df47d9e94ef295e185c59ae4b4628c2de7333526bec03ffdb0c40aac20",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_plastic_jerrycan_0_n.jpg",
+      "bytes": 51105,
+      "sha256": "592905dc7584bf9ba014cce495a034f0f3135d712128184429980eb1bee9c020",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_plastic_jerrycan_0_r.jpg",
+      "bytes": 108159,
+      "sha256": "79402265b9bba83b52172b6eab82b95f3b4109962994c7db8ef53a57246c45c5",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_bucket_01_0_a.jpg",
+      "bytes": 59261,
+      "sha256": "fc1fd6aed5f36bf8f48cd9d39e2029a4151cb2a5194b31cc1b2c2c7d4ecb979b",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_bucket_01_0_n.jpg",
+      "bytes": 58439,
+      "sha256": "e8a4d8b703d244186cad2102734a4e925630f706405d00563b423e4ce5dc5bf9",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_bucket_01_0_r.jpg",
+      "bytes": 81071,
+      "sha256": "0527e1d74bef548a815bb85851ccfd3a64b0fe52e164e9c87caecd983ae0b0b2",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_crate_01_0_a.jpg",
+      "bytes": 59591,
+      "sha256": "253dc7afd546525f6ca2f7547c001b4e5e3e5c97286ebd8b554a6d8d754b33ce",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_crate_01_0_n.jpg",
+      "bytes": 50512,
+      "sha256": "fd66fac342b21272db2c0ceff8935ab661099653d974f7037643b60830ca30f4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_crate_01_0_r.jpg",
+      "bytes": 75542,
+      "sha256": "352460ee351df1ad2ad649157718b2687aabb880ee17fcb1de949943fc659b27",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_crate_02_0_a.jpg",
+      "bytes": 63008,
+      "sha256": "b0492b57d1bf940c9c36c54b562b473ea48c28e634dcb336cb03e95ed4ba18a3",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_crate_02_0_n.jpg",
+      "bytes": 49803,
+      "sha256": "e547d3e9753ad185b8877296066c8ae59b236d3b6d9b6ed5a29621340c5108a3",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_crate_02_0_r.jpg",
+      "bytes": 82037,
+      "sha256": "70c59a9849d791506db4454d31f609f73ea033b50ea0f48b152bc496988d47a4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_cutting_board_0_a.jpg",
+      "bytes": 67101,
+      "sha256": "c06d3d0fbc5c9e00f754d82f676fe1be1053530310cdf5ce624b7c84ff8ecf75",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_cutting_board_0_n.jpg",
+      "bytes": 48647,
+      "sha256": "82a0190810e8e13dbd5156cf058dbb3b0d0120df1aa07ed3dc994fddfe6f97e2",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_cutting_board_0_r.jpg",
+      "bytes": 27151,
+      "sha256": "767c3f44efefbee5ce0835bd5fb04e41b903576aa81d9e3fdefb960957af7a67",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_display_shelves_01_0_a.jpg",
+      "bytes": 47132,
+      "sha256": "1bb3878ca01ccde52e8d051368dee7a67d905431547e218bb10d49d88d7cbb33",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_display_shelves_01_0_n.jpg",
+      "bytes": 19738,
+      "sha256": "809b37bade4475cbc3c93c30b82fbe71194aa8b15e50f0b1dcc79e2c4c0f78cf",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_display_shelves_01_0_r.jpg",
+      "bytes": 58584,
+      "sha256": "43d487b561ecd31da8fea819e48f895a711c5045665fc3e1d78bdaa10b143b14",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_lantern_01_0_a.jpg",
+      "bytes": 60530,
+      "sha256": "f4d25f09192b2ad096609ec7917a74e88fc536d37b2f764872f18aa30c9e7cd7",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_lantern_01_0_n.jpg",
+      "bytes": 70640,
+      "sha256": "f0a2d553099e285a47271002808aaf5a672cb57c6d1f5d5601f80da924118a88",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_lantern_01_0_r.jpg",
+      "bytes": 84421,
+      "sha256": "803bd9da03c87b73b66ff3ef00e8a7c6e9a76b335ffb3aac4df0919d3ea847bd",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_lantern_01_1_a.jpg",
+      "bytes": 27242,
+      "sha256": "ffab51509e7d89a0f07e763cb663fac7d72e007d8727f394958ca6a5a64ef701",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_lantern_01_1_n.jpg",
+      "bytes": 10665,
+      "sha256": "4fdf1b374deb5e9f32ca32d581ad7b83b38519e0a27fb9c2b97d895932bf0754",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_wooden_lantern_01_1_r.jpg",
+      "bytes": 40594,
+      "sha256": "51952435ccc51447b137d116fb717c6539548ab3b1a34056041604af568b530e",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_WoodenTable_03_0_a.jpg",
+      "bytes": 48049,
+      "sha256": "941155536ebc3c00fd62035cab642b7061f72477ef824a573612de5175985363",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_WoodenTable_03_0_n.jpg",
+      "bytes": 50552,
+      "sha256": "80c38ffd9f72b54d840ff8d278dc382ba84e2eb8511a7c896e19ea9109fb94cc",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/p_WoodenTable_03_0_r.jpg",
+      "bytes": 76840,
+      "sha256": "f0b7052ace0b9827afbe7d26beefa5009a4da0a0060e897dfcd0b7a6ea13a6f7",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/props.bin",
+      "bytes": 1988532,
+      "sha256": "f6dbe1c53a94a330f1aae852964aec1d8e4bcd57b04b145df9b1552aa899d486",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/props.json",
+      "bytes": 3386,
+      "sha256": "858b5910c9df36e70d9667e005df080eb0e508484e45ba081fd8aba6fb37ccb5",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_brown_planks_a.jpg",
+      "bytes": 235038,
+      "sha256": "09c4942b3b03b022be607f04ac05d1b832cbb0b32a1faaffe7624be6b1d44df8",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_brown_planks_n.jpg",
+      "bytes": 246956,
+      "sha256": "1bcae3fa86c68a4d9ce82bf90e1cf6cbf9af7fe6a1c15aef09fa79c18f9308ff",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_brown_planks_r.jpg",
+      "bytes": 224089,
+      "sha256": "f562c608e9ea0a9efda3a08c2e3109f496ecd9d2c15f3d9286ba3c0e12e27afa",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_peeling_timber_a.jpg",
+      "bytes": 322180,
+      "sha256": "8021a167f79461bf3edff76d277b0770bb55bc56e75a33321a40eaff0014253f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_peeling_timber_n.jpg",
+      "bytes": 220254,
+      "sha256": "885759fd46ad21bdb72fd21460f07ba448865207b3fd2cc39ab4fbc91b24232d",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_peeling_timber_r.jpg",
+      "bytes": 217262,
+      "sha256": "69b9b3d1ffda28e6824f2e5cac0c4f361c54d343d206b861d37e19234b30f9fc",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_planks_a.jpg",
+      "bytes": 166512,
+      "sha256": "0517c5c7e79c378bb03bd35e44f3e2216cdd184a085599e7effb1371b7c8845a",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_planks_n.jpg",
+      "bytes": 206585,
+      "sha256": "2205263952e3f58d4d1736afa0b884dc506f223641bbe10ee613d49f830e6cf6",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_weathered_planks_r.jpg",
+      "bytes": 125165,
+      "sha256": "404a5ad3a39b45036f405d48859248e5c60cce12ee6c62396cd26a20f4cd6f52",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_worn_corrugated_iron_a.jpg",
+      "bytes": 277831,
+      "sha256": "19c86b80696d51760acc3d4e542401c1c5c66ee7e7f128e4c9454cb0d47578c6",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_worn_corrugated_iron_n.jpg",
+      "bytes": 413288,
+      "sha256": "c4296e5fc64d702243e66367ccbab9b22a408ad46d19fddf39542eaffc4681d2",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/s_worn_corrugated_iron_r.jpg",
+      "bytes": 195035,
+      "sha256": "baa6ab87bfc3bfb4fea34d415e69ba742d89956a627e8f203afb64f187fa1524",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/props/signs.png",
+      "bytes": 222251,
+      "sha256": "94036b301f674db2df33b001dc00f76ef540d3156f7b16492fe7ff2dfbf66431",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/whale/humpback_albedo.png",
+      "bytes": 4289686,
+      "sha256": "5daaa6727f5304aaa3b6f6ef86cedcebc7cf922376a5c0e7caad66c4f4a5efe1",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/whale/humpback_height.png",
+      "bytes": 12896017,
+      "sha256": "5e18fbff0aa0034519d149c245d515f75011e7dd4f626dbd1a5e97eea79b66b5",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/whale/humpback.bin",
+      "bytes": 3469416,
+      "sha256": "b3a31801a393489331bc3dd4fd5be64cbad32ac4e159f5180e0eb028d489a92d",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/whale/humpback.json",
+      "bytes": 4106,
+      "sha256": "c47390c365da1c8c6fa73bea4996bf51073a973770c1942e8993f545e283a354",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "models/whale-skeleton/east_whale.glb",
+      "bytes": 1337204,
+      "sha256": "8d4b1cc36061e2bf57ffb6136431d2712b179021b04fec9e825ebab71062f321",
+      "license": "Petalwake MIT commit 25443ce; generated with Meshy/fal (THIRD-PARTY-NOTICES.md)"
+    },
+    {
+      "path": "models/whale-skeleton/LICENSE-Petalwake.txt",
+      "bytes": 1069,
+      "sha256": "12b60805e440dcf56c7c1347e2eada1105e7c143ee4642fe712a3958cc3e6c6f",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "textures/smaa/area.png",
+      "bytes": 33203,
+      "sha256": "b5a8e3bb3fbf11136d1411c6b7454f4469358559352987a074e22047582c0625",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "textures/smaa/search.png",
+      "bytes": 113,
+      "sha256": "025eb54fb8c4c2858a7d6d9743b88919fe5f9c661329c447a8f1e28971ae7403",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "ui/keyart-720.jpg",
+      "bytes": 200134,
+      "sha256": "e906ec7276326d68742b9849170baf732a7700b5aac2f1cea90e8a8af9dbdcee",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    },
+    {
+      "path": "ui/keyart.jpg",
+      "bytes": 352721,
+      "sha256": "d56e8dcab5c2134b2a737c2065c508870804e19bcbb06c82d7f40297db1734c4",
+      "license": "Tidewater upstream / asset-specific (see CREDITS.md)"
+    }
+  ]
+}
